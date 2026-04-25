@@ -50,6 +50,7 @@ nav a:hover {
     width: 100%;
     height: 420px;
     overflow: hidden;
+    position: relative;
 }
 
 .hero img {
@@ -57,53 +58,8 @@ nav a:hover {
     height: 100%;
     object-fit: cover;
 
-    /* THIS IS THE FIX */
-    object-position: center 25%;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .hero {
-        height: 300px;
-    }
-}
-
-@media (max-width: 600px) {
-    .hero {
-        height: 220px;
-    }
-}
-
-/* OVERLAY */
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-}
-
-/* TEXT ON BANNER */
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 90%;
-}
-
-.hero-text h1 {
-    color: #d4af37;
-    font-size: 42px;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-}
-
-.hero-text h2 {
-    color: #e6c76b;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 18px;
+    /* 🔥 Crops out visible title text */
+    object-position: center 18%;
 }
 
 /* ===== CONTAINER ===== */
@@ -193,19 +149,11 @@ footer a:hover {
     .hero {
         height: 300px;
     }
-
-    .hero-text h1 {
-        font-size: 28px;
-    }
-
-    .hero-text h2 {
-        font-size: 14px;
-    }
 }
 
 @media (max-width: 600px) {
     .hero {
-        height: 240px;
+        height: 220px;
     }
 
     .content {
@@ -219,8 +167,6 @@ footer a:hover {
     }
 }
 
-
-
 </style>
 </head>
 
@@ -233,7 +179,7 @@ footer a:hover {
     <a href="chapter1.html">Chapter 1</a>
 </nav>
 
-<!-- ===== BANNER (FIXED) ===== -->
+<!-- ===== CLEAN BANNER ===== -->
 <div class="hero">
     <img src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png" alt="Bruised Reeds Banner">
 </div>
