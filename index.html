@@ -8,9 +8,19 @@
 
 <style>
 
-/* ===== GLOBAL ===== */
-body {
+/* ===== RESET ===== */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* ===== BODY ===== */
+body {
     font-family: Georgia, "Times New Roman", serif;
     background: linear-gradient(to bottom, #1a1410, #0f0b08);
     color: #f5f2eb;
@@ -27,7 +37,7 @@ nav {
 nav a {
     color: #d4af37;
     text-decoration: none;
-    margin: 0 12px;
+    margin: 0 10px;
     font-size: 14px;
 }
 
@@ -35,31 +45,52 @@ nav a:hover {
     color: #e6c76b;
 }
 
-/* ===== HERO ===== */
+/* ===== HERO BANNER ===== */
 .hero {
-    text-align: center;
-    padding: 50px 20px 20px;
-}
-
-.hero img {
-    max-width: 260px;
+    position: relative;
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.7);
-    margin-bottom: 20px;
+    height: 420px;
+    overflow: hidden;
 }
 
-.hero h1 {
+/* IMAGE FIX */
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* OVERLAY */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+/* TEXT ON BANNER */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+}
+
+.hero-text h1 {
     color: #d4af37;
-    letter-spacing: 2px;
+    font-size: 42px;
+    letter-spacing: 3px;
     margin-bottom: 10px;
 }
 
-.hero h2 {
+.hero-text h2 {
     color: #e6c76b;
     font-style: italic;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* ===== CONTAINER ===== */
@@ -144,10 +175,34 @@ footer a:hover {
     color: #e6c76b;
 }
 
-/* ===== MOBILE ===== */
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .hero {
+        height: 300px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text h2 {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 600px) {
+    .hero {
+        height: 240px;
+    }
+
     .content {
         padding: 25px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
     }
 }
 
@@ -163,10 +218,9 @@ footer a:hover {
     <a href="chapter1.html">Chapter 1</a>
 </nav>
 
+<!-- ===== BANNER (FIXED) ===== -->
 <div class="hero">
-    <img src="book-cover.jpg" alt="Bruised Reeds Book Cover">
-    <h1>Bruised Reeds</h1>
-    <h2>When Holiness Becomes a Weapon</h2>
+    <img src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png" alt="Bruised Reeds Banner">
 </div>
 
 <div class="container">
