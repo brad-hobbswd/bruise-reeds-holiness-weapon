@@ -1,255 +1,649 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bruised Reeds | Chapter 8</title>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Read Chapter Eight of Bruised Reeds by Bradley Hobbs. Spiritual Heaviness and Oppression explores burdens, church hurt, restoration, and the freedom found in Jesus Christ.">
+
+<meta
+name="author"
+content="Bradley Hobbs">
+
+<title>Bruised Reeds | Chapter Eight</title>
 
 <style>
 
-/* ===== RESET ===== */
-* {
-    box-sizing: border-box;
+/*==============================
+RESET
+==============================*/
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+html{
+
+scroll-behavior:smooth;
+
 }
 
-/* ===== BODY ===== */
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: linear-gradient(to bottom, #1a1410, #0f0b08);
-    color: #f5f2eb;
+body{
+
+font-family:
+Georgia,
+"Times New Roman",
+serif;
+
+background:
+linear-gradient(
+180deg,
+#1a1410 0%,
+#15100d 40%,
+#0f0b08 100%);
+
+color:#f5f2eb;
+
+line-height:1.9;
+
+overflow-x:hidden;
+
 }
 
-/* ===== NAV ===== */
-nav {
-    background: #0f0b08;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #2a211c;
+/*==============================
+NAVIGATION
+==============================*/
+
+nav{
+
+background:#0f0b08;
+
+border-bottom:1px solid #2a211c;
+
+padding:18px 25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:24px;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
 }
 
-nav a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
+nav a{
+
+color:#d4af37;
+
+text-decoration:none;
+
+font-size:15px;
+
+letter-spacing:.5px;
+
+transition:color .3s ease;
+
 }
 
-nav a:hover {
-    color: #e6c76b;
+nav a:hover{
+
+color:#f1d889;
+
 }
 
-/* ===== HERO BANNER ===== */
-.hero {
-    width: 100%;
-    height: 420px;
-    overflow: hidden;
-    position: relative;
+/*==============================
+HERO
+==============================*/
+
+.hero{
+
+width:100%;
+
+background:#0f0b08;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:35px 20px;
+
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 18%;
+.hero img{
+
+width:100%;
+
+max-width:1600px;
+
+height:auto;
+
+display:block;
+
+object-fit:contain;
+
 }
 
-/* ===== CONTAINER ===== */
-.container {
-    max-width: 850px;
-    margin: auto;
-    padding: 20px;
+/*==============================
+MAIN
+==============================*/
+
+main{
+
+padding:70px 25px;
+
 }
 
-/* ===== CONTENT ===== */
-.content {
-    background: #1f1813;
-    padding: 45px 35px;
-    border-radius: 12px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+/*==============================
+CHAPTER
+==============================*/
+
+.content{
+
+max-width:950px;
+
+margin:auto;
+
 }
 
-/* ===== TITLE ===== */
-.content h3 {
-    text-align: center;
-    color: #d4af37;
-    margin-bottom: 35px;
-    letter-spacing: 1px;
+.content h1{
+
+text-align:center;
+
+font-size:48px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:18px;
+
 }
 
-/* ===== TEXT ===== */
-.content p {
-    line-height: 1.9;
-    margin-bottom: 20px;
+.subtitle{
+
+text-align:center;
+
+font-size:18px;
+
+font-style:italic;
+
+color:#cdbfae;
+
+margin-bottom:60px;
+
 }
 
-/* ===== DIVIDER ===== */
-.divider {
-    text-align: center;
-    margin: 35px 0;
-    color: #3a2f28;
+.article{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(34,26,20,.96),
+
+rgba(23,18,14,.98)
+
+);
+
+border:1px solid rgba(212,175,55,.15);
+
+border-radius:20px;
+
+padding:60px;
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.35);
+
 }
 
-/* ===== FOOTER NAV ===== */
-.footer-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+.article p{
+
+font-size:18px;
+
+line-height:2;
+
+margin-bottom:28px;
+
+color:#d7cec3;
+
 }
 
-.footer-nav a {
-    color: #d4af37;
-    text-decoration: none;
+.divider{
+
+width:90px;
+
+height:1px;
+
+background:#4a3a30;
+
+margin:45px auto;
+
 }
 
-.footer-nav a:hover {
-    color: #e6c76b;
+/*==============================
+CHAPTER NAVIGATION
+==============================*/
+
+.chapter-nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:20px;
+
+margin-top:60px;
+
+flex-wrap:wrap;
+
 }
 
-/* ===== FOOTER ===== */
-footer {
-    margin-top: 70px;
-    background: #0f0b08;
-    border-top: 1px solid #2a211c;
-    padding: 30px 20px;
-    text-align: center;
+.chapter-nav a{
+
+display:inline-block;
+
+padding:14px 28px;
+
+border:1px solid #d4af37;
+
+color:#d4af37;
+
+text-decoration:none;
+
+transition:
+
+background .3s,
+
+color .3s,
+
+transform .3s;
+
 }
 
-footer p {
-    margin: 6px 0;
-    font-size: 13px;
-    color: #a89c8f;
+.chapter-nav a:hover{
+
+background:#d4af37;
+
+color:#0f0b08;
+
+transform:translateY(-2px);
+
 }
 
-footer .highlight {
-    color: #d4af37;
+/*==============================
+FOOTER
+==============================*/
+
+footer{
+
+margin-top:80px;
+
+background:#0b0907;
+
+border-top:1px solid #2a211c;
+
+padding:70px 30px;
+
+text-align:center;
+
 }
 
-footer a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 8px;
-    font-size: 13px;
+.footer-wrap{
+
+max-width:900px;
+
+margin:auto;
+
 }
 
-footer a:hover {
-    color: #e6c76b;
+.footer-title{
+
+font-size:32px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:25px;
+
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-    .hero {
-        height: 300px;
-    }
+.footer-links{
+
+margin:30px 0;
+
 }
 
-@media (max-width: 600px) {
-    .hero {
-        height: 220px;
-    }
+.footer-links a{
 
-    .content {
-        padding: 25px;
-    }
+color:#d4af37;
 
-    .footer-nav {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
+text-decoration:none;
+
+margin:0 12px;
+
+}
+
+.footer-links a:hover{
+
+color:#f1d889;
+
+}
+
+.footer-message{
+
+margin:30px 0;
+
+font-style:italic;
+
+color:#d4af37;
+
+}
+
+.footer-small{
+
+font-size:13px;
+
+color:#9d9184;
+
+margin:8px 0;
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+.hero{
+
+padding:20px 10px;
+
+}
+
+.content h1{
+
+font-size:36px;
+
+}
+
+.article{
+
+padding:32px;
+
+}
+
+.article p{
+
+font-size:17px;
+
+}
+
+.chapter-nav{
+
+justify-content:center;
+
+}
+
+nav{
+
+gap:16px;
+
+}
+
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="introduction.html">Introduction</a>
-    <a href="chapter1.html">Chapter 1</a>
+<nav aria-label="Primary Navigation">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="introduction.html">Introduction</a>
+
+<a href="chapter1.html">Chapter 1</a>
+
 </nav>
 
-<!-- ===== BANNER ===== -->
-<div class="hero">
-    <img src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png" alt="Bruised Reeds Banner">
+<main>
+
+<!-- ==========================
+HERO
+========================== -->
+
+<section class="hero">
+
+<img
+src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png"
+alt="Bruised Reeds Banner"
+loading="eager"
+decoding="async">
+
+</section>
+
+<div style="
+width:90%;
+max-width:1200px;
+height:1px;
+background:#2a211c;
+margin:0 auto 70px;
+"></div>
+
+<!-- ==========================
+CHAPTER EIGHT
+========================== -->
+
+<section class="content">
+
+<h1>Chapter Eight</h1>
+
+<p class="subtitle">
+
+Spiritual Heaviness and Oppression
+
+</p>
+
+<div class="article">
+
+<p>
+
+There are burdens that cannot be measured by attendance, service, or outward faithfulness. They settle quietly upon the heart until worship becomes difficult, prayer feels exhausting, and joy seems distant. Spiritual heaviness often develops when believers carry wounds caused not by Christ but by painful experiences within His Church. The weight is real, even when few people recognize it.
+
+</p>
+
+<p>
+
+People experience this heaviness in different ways. Some live with constant anxiety, always wondering whether they are being watched, evaluated, or quietly discussed. Others carry guilt they cannot explain, believing they must continually prove themselves worthy of acceptance. Still others experience a loneliness that leaves them feeling forgotten, even while surrounded by fellow believers.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+These burdens rarely appear overnight. They grow through repeated moments of misunderstanding, unanswered questions, whispered conversations, and judgments formed without relationship. Each experience adds another layer until the simple acts of serving God begin to feel increasingly difficult. What once brought peace slowly becomes associated with fear and uncertainty.
+
+</p>
+
+<p>
+
+Questions that seem harmless can become heavy when repeated without compassion. Doubts about someone's sincerity, faithfulness, or commitment eventually create an atmosphere where people feel they must defend themselves instead of simply walking with Christ. Burdens accumulate where grace becomes scarce.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Many people respond by withdrawing emotionally. Others become increasingly busy, hoping greater service will silence criticism. Some carefully monitor every word they speak, fearing that one mistake may confirm assumptions already being made about them. Instead of experiencing the freedom Christ promised, they begin carrying weights He never intended them to bear.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Jesus consistently offered something entirely different. He invited weary people to come to Him for rest. He never increased the burdens of those already struggling. He restored dignity, lifted condemnation, and reminded the weary that His yoke is easy and His burden is light. His presence always moved people toward freedom rather than fear.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Spiritual heaviness should never be mistaken for spiritual maturity. Carrying unnecessary guilt does not honor God, nor does living beneath constant suspicion produce holiness. Many of these burdens originate not from the voice of Christ but from unhealthy patterns within human relationships. Recognizing that difference becomes an important step toward healing.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+This chapter is written for those who feel exhausted beneath invisible burdens. It is an invitation to recognize that Jesus did not call His people to live beneath crushing expectations. He calls them into truth, grace, restoration, and peace. The burdens placed upon believers by fear and control can be laid down in His presence.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Bruised reeds may bend beneath seasons of heaviness, yet they remain secure in the hands of Christ. His love restores what fear has weakened. His truth silences accusation. His compassion lifts burdens too heavy to carry alone. Where Jesus is welcomed, hope begins to replace oppression, and weary hearts discover the freedom to breathe once again.
+
+</p>
+
+<div class="chapter-nav">
+
+<a href="chapter7.html">
+
+← Chapter Seven
+
+</a>
+
+<a href="chapter9.html">
+
+Chapter Nine →
+
+</a>
+
 </div>
 
-<div class="container">
-
-    <div class="content">
-
-        <h3>Chapter Eight:<br>Spiritual Heaviness and Oppression</h3>
-
-        <p>There is a weight that cannot be measured by attendance or participation. It is a heaviness that presses down on the spirit, even when the body moves through church life faithfully. It is the result of words spoken in secrecy, of prayers offered from judgment rather than love, of holiness wielded as a weapon. It is spiritual heaviness, and it is real.</p>
-
-        <p>People carry it differently. Some feel it as anxiety that never leaves, a constant awareness of eyes on them, whispers they cannot quite prove, and glances that cut deeper than any sermon. Some feel it as guilt that does not belong to them, layered over the natural rhythms of faith, as if their devotion must be measured in perfection to be safe. Others feel it as isolation, as though the Holy Spirit has stepped aside, leaving them exposed to the judgments of human hearts.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>The weight is cumulative. It comes from every corner: from leaders who assume rather than ask, from friends who gossip in the name of care, from meetings held in absence, from prayers that speak suspicion rather than hope. Over time, it crushes joy. It dims confidence. It makes the simplest acts of worship feel heavy, like lifting stones instead of lifting hands.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>“Are you sure your heart is right?”  
-        “Have you repented enough?”  
-        “We’re concerned about your loyalty.”</p>
-
-        <p>The questions are familiar. They are meant to be careful, thoughtful, and spiritual. But when repeated over months or years without love, without presence, without genuine understanding, they become chains. They bind. They do not release. They oppress.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Some respond by withdrawing, hiding, by performing safety, by overcompensating in service. Others become hardened, defensive, and distrustful. The spirit longs for freedom, but the environment offers only scrutiny. Every step toward authenticity feels like walking on glass, every word feels weighted, every glance feels judgmental.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Yet Jesus offers another way. He does not weigh hearts in secrecy. He does not measure loyalty with fear. He does not judge through absence or whispers. He walks beside the bruised and oppressed. He breathes freedom into those carrying burdens that were never meant to be theirs alone. He calls people to lay down the weight, to stop hiding, to come forward, to bring the truth into the light.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Spiritual heaviness is not the absence of faith. It is the result of human mismanagement of holiness. It is the effect of a church that has lost sight of the gentle heart of Jesus. And it can be lifted when love, truth, presence, and mercy are restored.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>This chapter is for those who feel crushed under the weight of what should have been sanctuary. It is for those who have learned to carry guilt they never earned, suspicion they never invited, and silence they did not choose. It is for those who need to remember that Jesus came to lift burdens, not to add them.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Bruised reeds may bend under the weight of oppression, but they do not break. And when the truth of Jesus meets the weight of the church, freedom comes. Relief comes. Restoration begins. The heaviness lifts, and the spirit breathes again.</p>
-
-        <div class="footer-nav">
-            <a href="chapter7.html">← Previous</a>
-            <a href="chapter9.html">Next Chapter →</a>
-        </div>
-
-    </div>
-
 </div>
+
+</section>
+
+</main>
+
 
 <footer>
 
-    <p class="highlight">Bruised Reeds: When Holiness Becomes a Weapon</p>
-    <p>Written by Bradley Hobbs</p>
+<div class="footer-wrap">
 
-    <p>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="introduction.html">Introduction</a> |
-        <a href="chapter9.html">Chapter 9</a>
-    </p>
+<h2 class="footer-title">
 
-    <p>You are seen. You are known. You are loved by Jesus.</p>
+Bruised Reeds
 
-    <p>© 2026 Bradley Hobbs. All rights reserved.</p>
+</h2>
+
+<p class="footer-small">
+
+Written by Bradley Hobbs
+
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="introduction.html">
+
+Introduction
+
+</a>
+
+<a href="chapter8.html">
+
+Chapter 8
+
+</a>
+
+<a href="chapter9.html">
+
+Chapter 9
+
+</a>
+
+</div>
+
+<p class="footer-message">
+
+"You are seen. You are known. You are loved by Jesus."
+
+</p>
+
+<div class="divider"></div>
+
+<p class="footer-small">
+
+© 2026 Bradley Hobbs. All Rights Reserved.
+
+</p>
+
+</div>
 
 </footer>
 
 </body>
+
 </html>
