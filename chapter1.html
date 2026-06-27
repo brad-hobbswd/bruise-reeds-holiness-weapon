@@ -1,253 +1,651 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bruised Reeds | Chapter 1</title>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Read Chapter One of Bruised Reeds by Bradley Hobbs. The Closet Built by the Church explores church hurt, hidden wounds, healing, and the compassion of Jesus Christ.">
+
+<meta
+name="author"
+content="Bradley Hobbs">
+
+<title>Bruised Reeds | Chapter One</title>
 
 <style>
 
-/* ===== RESET ===== */
-* {
-    box-sizing: border-box;
+/*==============================
+RESET
+==============================*/
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+html{
+
+scroll-behavior:smooth;
+
 }
 
-/* ===== BODY ===== */
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: linear-gradient(to bottom, #1a1410, #0f0b08);
-    color: #f5f2eb;
+body{
+
+font-family:
+Georgia,
+"Times New Roman",
+serif;
+
+background:
+linear-gradient(
+180deg,
+#1a1410 0%,
+#15100d 40%,
+#0f0b08 100%);
+
+color:#f5f2eb;
+
+line-height:1.9;
+
+overflow-x:hidden;
+
 }
 
-/* ===== NAV ===== */
-nav {
-    background: #0f0b08;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #2a211c;
+/*==============================
+NAVIGATION
+==============================*/
+
+nav{
+
+background:#0f0b08;
+
+border-bottom:1px solid #2a211c;
+
+padding:18px 25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:24px;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
 }
 
-nav a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
+nav a{
+
+color:#d4af37;
+
+text-decoration:none;
+
+font-size:15px;
+
+letter-spacing:.5px;
+
+transition:color .3s ease;
+
 }
 
-nav a:hover {
-    color: #e6c76b;
+nav a:hover{
+
+color:#f1d889;
+
 }
 
-/* ===== HERO BANNER ===== */
-.hero {
-    width: 100%;
-    height: 420px;
-    overflow: hidden;
-    position: relative;
+/*==============================
+HERO
+==============================*/
+
+.hero{
+
+width:100%;
+
+background:#0f0b08;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:35px 20px;
+
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.hero img{
 
-    /* SAME CROP AS INTRO */
-    object-position: center 18%;
+width:100%;
+
+max-width:1600px;
+
+height:auto;
+
+display:block;
+
+object-fit:contain;
+
 }
 
-/* ===== CONTAINER ===== */
-.container {
-    max-width: 850px;
-    margin: auto;
-    padding: 20px;
+/*==============================
+MAIN
+==============================*/
+
+main{
+
+padding:70px 25px;
+
 }
 
-/* ===== CONTENT ===== */
-.content {
-    background: #1f1813;
-    padding: 45px 35px;
-    border-radius: 12px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+/*==============================
+CHAPTER
+==============================*/
+
+.content{
+
+max-width:950px;
+
+margin:auto;
+
 }
 
-/* ===== TITLE ===== */
-.content h3 {
-    text-align: center;
-    color: #d4af37;
-    margin-bottom: 35px;
-    letter-spacing: 1px;
+.content h1{
+
+text-align:center;
+
+font-size:48px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:18px;
+
 }
 
-/* ===== TEXT ===== */
-.content p {
-    line-height: 1.9;
-    margin-bottom: 20px;
+.subtitle{
+
+text-align:center;
+
+font-size:18px;
+
+font-style:italic;
+
+color:#cdbfae;
+
+margin-bottom:60px;
+
 }
 
-/* ===== DIVIDER ===== */
-.divider {
-    text-align: center;
-    margin: 35px 0;
-    color: #3a2f28;
+.article{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(34,26,20,.96),
+
+rgba(23,18,14,.98)
+
+);
+
+border:1px solid rgba(212,175,55,.15);
+
+border-radius:20px;
+
+padding:60px;
+
+box-shadow:
+
+0 25px 60px
+
+rgba(0,0,0,.35);
+
 }
 
-/* ===== FOOTER NAV ===== */
-.footer-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+.article p{
+
+font-size:18px;
+
+line-height:2;
+
+margin-bottom:28px;
+
+color:#d7cec3;
+
 }
 
-.footer-nav a {
-    color: #d4af37;
-    text-decoration: none;
+.divider{
+
+width:90px;
+
+height:1px;
+
+background:#4a3a30;
+
+margin:45px auto;
+
 }
 
-.footer-nav a:hover {
-    color: #e6c76b;
+/*==============================
+CHAPTER NAVIGATION
+==============================*/
+
+.chapter-nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:20px;
+
+margin-top:60px;
+
+flex-wrap:wrap;
+
 }
 
-/* ===== FOOTER ===== */
-footer {
-    margin-top: 70px;
-    background: #0f0b08;
-    border-top: 1px solid #2a211c;
-    padding: 30px 20px;
-    text-align: center;
+.chapter-nav a{
+
+display:inline-block;
+
+padding:14px 28px;
+
+border:1px solid #d4af37;
+
+color:#d4af37;
+
+text-decoration:none;
+
+transition:
+
+background .3s,
+
+color .3s,
+
+transform .3s;
+
 }
 
-footer p {
-    margin: 6px 0;
-    font-size: 13px;
-    color: #a89c8f;
+.chapter-nav a:hover{
+
+background:#d4af37;
+
+color:#0f0b08;
+
+transform:translateY(-2px);
+
 }
 
-footer .highlight {
-    color: #d4af37;
+/*==============================
+FOOTER
+==============================*/
+
+footer{
+
+margin-top:80px;
+
+background:#0b0907;
+
+border-top:1px solid #2a211c;
+
+padding:70px 30px;
+
+text-align:center;
+
 }
 
-footer a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 8px;
-    font-size: 13px;
+.footer-wrap{
+
+max-width:900px;
+
+margin:auto;
+
 }
 
-footer a:hover {
-    color: #e6c76b;
+.footer-title{
+
+font-size:32px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:25px;
+
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-    .hero {
-        height: 300px;
-    }
+.footer-links{
+
+margin:30px 0;
+
 }
 
-@media (max-width: 600px) {
-    .hero {
-        height: 220px;
-    }
+.footer-links a{
 
-    .content {
-        padding: 25px;
-    }
+color:#d4af37;
 
-    .footer-nav {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
+text-decoration:none;
+
+margin:0 12px;
+
+}
+
+.footer-links a:hover{
+
+color:#f1d889;
+
+}
+
+.footer-message{
+
+margin:30px 0;
+
+font-style:italic;
+
+color:#d4af37;
+
+}
+
+.footer-small{
+
+font-size:13px;
+
+color:#9d9184;
+
+margin:8px 0;
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+.hero{
+
+padding:20px 10px;
+
+}
+
+.content h1{
+
+font-size:36px;
+
+}
+
+.article{
+
+padding:32px;
+
+}
+
+.article p{
+
+font-size:17px;
+
+}
+
+.chapter-nav{
+
+justify-content:center;
+
+}
+
+nav{
+
+gap:16px;
+
+}
+
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="introduction.html">Introduction</a>
-    <a href="chapter1.html">Chapter 1</a>
+<nav aria-label="Primary Navigation">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="introduction.html">Introduction</a>
+
+<a href="chapter1.html">Chapter 1</a>
+
 </nav>
 
-<!-- ===== CLEAN BANNER ===== -->
-<div class="hero">
-    <img src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png" alt="Bruised Reeds Banner">
+<main>
+
+<!-- ==========================
+HERO
+========================== -->
+
+<section class="hero">
+
+<img
+src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png"
+alt="Bruised Reeds Banner"
+loading="eager"
+decoding="async">
+
+</section>
+
+<div style="
+width:90%;
+max-width:1200px;
+height:1px;
+background:#2a211c;
+margin:0 auto 70px;
+"></div>
+
+<!-- ==========================
+CHAPTER ONE
+========================== -->
+
+<section class="content">
+
+<h1>Chapter One</h1>
+
+<p class="subtitle">
+
+The Closet Built by the Church
+
+</p>
+
+<div class="article">
+
+<p>
+
+Closets are not always built with wood and hinges. Some are built with silence. Others are built through fearful glances, whispered conversations, unanswered questions, and assumptions that are allowed to grow without truth. Some are built through prayer requests offered without permission or concerns expressed without ever inviting a person into the conversation.
+
+</p>
+
+<p>
+
+Many people never entered these closets because of who they were. They entered because they slowly learned it was safer to hide than to be fully known. Long before doctrine was discussed or beliefs were questioned, they sensed something had changed. The atmosphere shifted. Conversations became guarded. Their presence was evaluated rather than welcomed. No one explained the rules, yet somehow everyone understood them.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+They learned which words should remain unspoken. They discovered which friendships were safer to keep private and which parts of their lives created discomfort in others. Over time, silence became a survival strategy. The closet was never built in a single day. It was constructed piece by piece through fear, misunderstanding, and the quiet expectation that honesty carried too great a cost.
+
+</p>
+
+<p>
+
+Often this was described as wisdom, discretion, maturity, or protecting the testimony of the Church. Yet beneath those explanations was something very different. Too often what was protected was comfort rather than compassion. People found themselves judged without conversation, categorized without consent, and misunderstood without ever being asked to share their own story.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Sometimes concern arrived disguised as kindness. Someone would quietly say they simply wanted to check on you because they had noticed something. Yet when asked what they had noticed, no clear answer followed. The purpose was rarely understanding. The purpose had already become confirmation. Once curiosity gives way to suspicion, the closet has already begun to take shape.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Silence can become one of the most powerful forms of exclusion. It leaves no obvious evidence. There are no difficult conversations, no direct accusations, and often no explanations. Instead, invitations become fewer, relationships grow distant, and conversations gradually disappear. Nothing has officially happened, yet everything feels different. Decisions have already been made without your voice ever being heard.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Holiness separated from genuine relationship becomes fragile. Holiness that refuses honest questions eventually becomes fearful. Holiness that depends upon secrecy ceases to reflect the character of Jesus. Throughout His ministry, Jesus continually invited people into the light. He listened before correcting, welcomed before judging, and restored before condemning. He never required people to hide in order to follow Him.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Many believers eventually learn to edit themselves simply to feel safe. They smile while quietly carrying fear. They worship while searching for exits. They serve while wondering whether they truly belong. This is not transformation. It is survival. Closets do not strengthen faith. They slowly fracture it. Prayer becomes difficult. Trust becomes fragile. Community becomes exhausting. Some remain but quietly shrink. Others leave carrying wounds few people ever recognize.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Jesus never confused fear with obedience. If God is one and His name is Jesus, then following Him does not require hiding. It calls us into truth held together with mercy. The Church was never intended to build closets. It was called to become a place where people could honestly say, "You do not have to hide here." Bruised reeds are not restored in darkness. They begin healing when they are finally welcomed into the light of Christ.
+
+</p>
+
+<div class="chapter-nav">
+
+<a href="introduction.html">
+
+← Introduction
+
+</a>
+
+<a href="chapter2.html">
+
+Chapter Two →
+
+</a>
+
 </div>
 
-<div class="container">
-
-    <div class="content">
-
-        <h3>Chapter One:<br>The Closet Built by the Church</h3>
-
-        <p>Closets are not always built with wood and hinges. Some are built with tone. Some with glances. Some with prayer requests that they never ask permission. Some with questions that are never spoken but are always answered for you.</p>
-
-        <p>Many people did not enter the closet because of who they were. They entered it because the church taught them it was safer to hide than to be known.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Long before doctrine was discussed, something else happened. A shift in atmosphere. A tightening of conversation. A new awareness that your presence was being assessed instead of welcomed. No one explained the rules. You just learned them.</p>
-
-        <p>You learned which words to avoid. Which friendships to downplay. Which parts of your story made people uncomfortable. Which truths required silence to keep the peace. And so, the closet was constructed slowly, faithfully, and invisibly.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>It was framed as wisdom. As discretion. As maturity. As protecting the testimony of the church. But what it actually protected was comfort.</p>
-
-        <p>Most were judged without interrogation, assessed without conversation, and categorized without consent. You could feel it in the way people stopped asking about your life, or in the way they suddenly asked too much. “We just want to check in on you,” someone says. “About what?” “You know. We’ve noticed some things.” Noticed what. No one ever said. Because the goal was not understanding. It was confirmation. Once curiosity turns into suspicion, the closet is already built.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Silence is one of the church’s most effective tools. It looks gentle. It feels spiritual. And it does not leave fingerprints. No confrontation. No explanation. Just distance. People stop sitting near you. Leadership stops calling. Your name is mentioned less than not at all. Nothing has been said, but everything has been decided.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>The closet thrives where holiness is disconnected from relationship. Holiness that cannot sit with questions becomes brittle. Holiness that cannot be heard becomes dangerous. Holiness that demands secrecy is no longer holy. Jesus never required anyone to hide in order to follow Him. He called people into the light, not into isolation. He asked questions. He touched first. He spoke directly. Yet many were taught that being seen was a threat.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>So, they learned to edit themselves for safety, to smile while bracing, to worship while watching exits, to serve while being erased. This is not transformation. This is survival. Closets do not preserve faith. They fracture it. People lose language for prayer. They lose trust in leadership. They lose confidence that Jesus is safe. Some stay but shrink. Some leave quietly. Some leave angrily. Some never leave but stop being fully alive. And the church often calls this fruit.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>But Jesus never called fear obedience. If God is one and His name is Jesus, then the high calling does not require hiding. It requires honesty held in mercy. The church did not need closets. She needed courage. And courage begins when someone says, “You do not have to hide here.” Bruised reeds do not heal in closets. They heal in light.</p>
-
-        <div class="footer-nav">
-            <a href="introduction.html">← Previous</a>
-            <a href="chapter2.html">Next Chapter →</a>
-        </div>
-
-    </div>
-
 </div>
+
+</section>
+
+</main>
+
 
 <footer>
 
-    <p class="highlight">Bruised Reeds: When Holiness Becomes a Weapon</p>
-    <p>Written by Bradley Hobbs</p>
+<div class="footer-wrap">
 
-    <p>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="introduction.html">Introduction</a> |
-        <a href="chapter2.html">Chapter 2</a>
-    </p>
+<h2 class="footer-title">
 
-    <p>You are seen. You are known. You are loved by Jesus.</p>
+Bruised Reeds
 
-    <p>© 2026 Bradley Hobbs. All rights reserved.</p>
+</h2>
+
+<p class="footer-small">
+
+Written by Bradley Hobbs
+
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="introduction.html">
+
+Introduction
+
+</a>
+
+<a href="chapter1.html">
+
+Chapter 1
+
+</a>
+
+<a href="chapter2.html">
+
+Chapter 2
+
+</a>
+
+</div>
+
+<p class="footer-message">
+
+"You are seen. You are known. You are loved by Jesus."
+
+</p>
+
+<div class="divider"></div>
+
+<p class="footer-small">
+
+© 2026 Bradley Hobbs. All Rights Reserved.
+
+</p>
+
+</div>
 
 </footer>
 
 </body>
+
 </html>
