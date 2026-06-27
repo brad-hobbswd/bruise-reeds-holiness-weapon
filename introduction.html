@@ -1,240 +1,609 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Read the introduction to Bruised Reeds by Bradley Hobbs, a book about healing, grace, restoration, and the compassion of Jesus Christ.">
+
+<meta
+name="author"
+content="Bradley Hobbs">
 
 <title>Bruised Reeds | Introduction</title>
 
 <style>
 
-/* ===== RESET ===== */
-* {
-    box-sizing: border-box;
+/*==============================
+RESET
+==============================*/
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+html{
+
+scroll-behavior:smooth;
+
 }
 
-/* ===== BODY ===== */
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: linear-gradient(to bottom, #1a1410, #0f0b08);
-    color: #f5f2eb;
+body{
+
+font-family:
+Georgia,
+"Times New Roman",
+serif;
+
+background:
+linear-gradient(
+180deg,
+#1a1410 0%,
+#15100d 40%,
+#0f0b08 100%);
+
+color:#f5f2eb;
+
+line-height:1.9;
+
+overflow-x:hidden;
+
 }
 
-/* ===== NAV ===== */
-nav {
-    background: #0f0b08;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #2a211c;
+/*==============================
+NAVIGATION
+==============================*/
+
+nav{
+
+background:#0f0b08;
+
+border-bottom:1px solid #2a211c;
+
+padding:18px 25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:24px;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
 }
 
-nav a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
+nav a{
+
+color:#d4af37;
+
+text-decoration:none;
+
+font-size:15px;
+
+letter-spacing:.5px;
+
+transition:color .3s ease;
+
 }
 
-nav a:hover {
-    color: #e6c76b;
+nav a:hover{
+
+color:#f1d889;
+
 }
 
-/* ===== HERO BANNER ===== */
-.hero {
-    width: 100%;
-    height: 420px;
-    overflow: hidden;
-    position: relative;
+/*==============================
+HERO
+==============================*/
+
+.hero{
+
+width:100%;
+
+background:#0f0b08;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:35px 20px;
+
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.hero img{
 
-    /* 🔥 Crops out visible title text */
-    object-position: center 18%;
+width:100%;
+
+max-width:1600px;
+
+height:auto;
+
+display:block;
+
+object-fit:contain;
+
 }
 
-/* ===== CONTAINER ===== */
-.container {
-    max-width: 850px;
-    margin: auto;
-    padding: 20px;
+/*==============================
+MAIN
+==============================*/
+
+main{
+
+padding:70px 25px;
+
 }
 
-/* ===== CONTENT ===== */
-.content {
-    background: #1f1813;
-    padding: 45px 35px;
-    border-radius: 12px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+/*==============================
+INTRODUCTION
+==============================*/
+
+.content{
+
+max-width:950px;
+
+margin:auto;
+
 }
 
-/* ===== TITLE ===== */
-.content h3 {
-    text-align: center;
-    color: #d4af37;
-    margin-bottom: 35px;
-    letter-spacing: 1px;
+.content h1{
+
+text-align:center;
+
+font-size:48px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:18px;
+
 }
 
-/* ===== TEXT ===== */
-.content p {
-    line-height: 1.9;
-    margin-bottom: 20px;
+.subtitle{
+
+text-align:center;
+
+font-size:18px;
+
+font-style:italic;
+
+color:#cdbfae;
+
+margin-bottom:60px;
+
 }
 
-/* ===== DIVIDER ===== */
-.divider {
-    text-align: center;
-    margin: 35px 0;
-    color: #3a2f28;
+.article{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(34,26,20,.96),
+
+rgba(23,18,14,.98)
+
+);
+
+border:1px solid rgba(212,175,55,.15);
+
+border-radius:20px;
+
+padding:60px;
+
+box-shadow:
+
+0 25px 60px
+
+rgba(0,0,0,.35);
+
 }
 
-/* ===== FOOTER NAV ===== */
-.footer-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+.article p{
+
+font-size:18px;
+
+line-height:2;
+
+margin-bottom:28px;
+
+color:#d7cec3;
+
 }
 
-.footer-nav a {
-    color: #d4af37;
-    text-decoration: none;
+.divider{
+
+width:90px;
+
+height:1px;
+
+background:#4a3a30;
+
+margin:45px auto;
+
 }
 
-.footer-nav a:hover {
-    color: #e6c76b;
+.chapter-nav{
+
+display:flex;
+
+justify-content:flex-end;
+
+margin-top:60px;
+
 }
 
-/* ===== FOOTER ===== */
-footer {
-    margin-top: 70px;
-    background: #0f0b08;
-    border-top: 1px solid #2a211c;
-    padding: 30px 20px;
-    text-align: center;
+.chapter-nav a{
+
+display:inline-block;
+
+padding:14px 30px;
+
+border:1px solid #d4af37;
+
+color:#d4af37;
+
+text-decoration:none;
+
+transition:
+
+background .3s,
+
+color .3s,
+
+transform .3s;
+
 }
 
-footer p {
-    margin: 6px 0;
-    font-size: 13px;
-    color: #a89c8f;
+.chapter-nav a:hover{
+
+background:#d4af37;
+
+color:#0f0b08;
+
+transform:translateY(-2px);
+
 }
 
-footer .highlight {
-    color: #d4af37;
+/*==============================
+FOOTER
+==============================*/
+
+footer{
+
+margin-top:80px;
+
+background:#0b0907;
+
+border-top:1px solid #2a211c;
+
+padding:70px 30px;
+
+text-align:center;
+
 }
 
-footer a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 8px;
-    font-size: 13px;
+.footer-wrap{
+
+max-width:900px;
+
+margin:auto;
+
 }
 
-footer a:hover {
-    color: #e6c76b;
+.footer-title{
+
+font-size:32px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:25px;
+
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-    .hero {
-        height: 300px;
-    }
+.footer-links{
+
+margin:30px 0;
+
 }
 
-@media (max-width: 600px) {
-    .hero {
-        height: 220px;
-    }
+.footer-links a{
 
-    .content {
-        padding: 25px;
-    }
+color:#d4af37;
 
-    .footer-nav {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
+text-decoration:none;
+
+margin:0 12px;
+
+}
+
+.footer-links a:hover{
+
+color:#f1d889;
+
+}
+
+.footer-message{
+
+margin:30px 0;
+
+font-style:italic;
+
+color:#d4af37;
+
+}
+
+.footer-small{
+
+font-size:13px;
+
+color:#9d9184;
+
+margin:8px 0;
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+.hero{
+
+padding:20px 10px;
+
+}
+
+.content h1{
+
+font-size:36px;
+
+}
+
+.article{
+
+padding:32px;
+
+}
+
+.article p{
+
+font-size:17px;
+
+}
+
+.chapter-nav{
+
+justify-content:center;
+
+}
+
+nav{
+
+gap:16px;
+
+}
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="introduction.html">Introduction</a>
-    <a href="chapter1.html">Chapter 1</a>
+<nav aria-label="Primary Navigation">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="introduction.html">Introduction</a>
+
+<a href="chapter1.html">Chapter 1</a>
+
 </nav>
 
-<!-- ===== CLEAN BANNER ===== -->
-<div class="hero">
-    <img src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png" alt="Bruised Reeds Banner">
+<main>
+
+<!-- ==========================
+HERO
+========================== -->
+
+<section class="hero">
+
+<img
+src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png"
+alt="Bruised Reeds Banner"
+loading="eager"
+decoding="async">
+
+</section>
+
+<div style="
+width:90%;
+max-width:1200px;
+height:1px;
+background:#2a211c;
+margin:0 auto 70px;
+"></div>
+
+<!-- ==========================
+INTRODUCTION
+========================== -->
+
+<section class="content">
+
+<h1>Introduction</h1>
+
+<p class="subtitle">
+
+When Holiness Hurts
+
+</p>
+
+<div class="article">
+
+<p>
+
+This book is for those who have been wounded long before any conversation about doctrine ever began. It is for those who have been silenced, shamed, misunderstood, or misrepresented in the name of holiness. It is for anyone who has experienced the weight of judgment where compassion should have been present and who still longs to know the heart of Jesus.
+
+</p>
+
+<p>
+
+Many have entered places that promised refuge only to discover isolation. They have spoken with sincerity yet found misunderstanding. They have served faithfully while quietly carrying questions, burdens, and unseen wounds. These experiences are not insignificant. They shape the heart, leaving bruises that cannot always be seen but are deeply felt within the soul.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Bruised Reeds does not ignore those realities. It acknowledges the pain of false assumptions, whispered conversations, misplaced labels, and the loneliness that often follows being misunderstood. It recognizes how holiness can be distorted into something that wounds rather than heals and how fear can silence voices that were created to testify of God's goodness.
+
+</p>
+
+<p>
+
+Yet these pages were never written to leave anyone in despair. They were written to point beyond the hurt toward the restoring grace of Jesus Christ. His compassion reaches where others cannot. His mercy speaks louder than accusation. His truth heals rather than destroys, and His presence restores what brokenness has tried to steal.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+As you continue reading, you may recognize parts of your own journey within these pages. Memories may surface. Questions may arise. Emotions may return. Through every chapter, remember this unchanging truth: you are not alone. Jesus sees every hidden wound, understands every silent prayer, and remains faithful even when others have failed.
+
+</p>
+
+<p>
+
+This book is an invitation to honesty, healing, restoration, and hope. It calls each reader to listen more carefully, to love more deeply, to protect those who have been overlooked, and to reflect the compassion of Christ in every relationship. Healing begins where truth and grace walk together.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Bruised reeds bend beneath the weight of suffering, but they are never abandoned by the Savior. He gently restores what others overlook, strengthens what has grown weary, and reminds every heart that His love remains constant. May these pages encourage you to trust Him more deeply, to walk forward with renewed courage, and to discover once again the hope found in Jesus Christ.
+
+</p>
+
+<div class="chapter-nav">
+
+<a href="chapter1.html">
+
+Begin Chapter One →
+
+</a>
+
 </div>
 
-<div class="container">
-
-    <div class="content">
-
-        <h3>Introduction:<br>When Holiness Hurts</h3>
-
-        <p>This book is for those who have been hurt before any conversation about doctrine ever took place. It is for those who have been silenced, shamed, and misrepresented in the name of holiness. It is for anyone who has felt the weight of the church pressing down where love should have lifted.</p>
-
-        <p>Many of us have walked into spaces meant to nurture and found walls instead of doors. We have spoken, only to be misunderstood. We have served faithfully, only to be questioned secretly. We have tried to honor God, only to feel unworthy, invisible, or accused. These experiences are not small. They are real, and they leave marks. Bruises that may not show on the body but press heavily on the spirit.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>This book does not shy away from those realities. It names the closets we are forced into, the surveillance we endure, the labels that define us before we are asked a single question. It speaks of the lies that travel faster than truth, of the conversations held in absence, and of holiness that has been used as a weapon instead of a guide.</p>
-
-        <p>But this book is not meant to leave you in despair. It is meant to speak life into the places that have been crushed, to affirm the value of your voice, and to remind you that bruised reeds are still precious to God. It is meant to show that even in the midst of harm, restoration is possible, courage is necessary, and love is never absent.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>You may read these pages and recognize your own story. You may feel the familiar sting of judgment, the fear of being watched, the loneliness of being misunderstood. You are not alone. Every person who has been silenced in the church carries the same truth: you are seen, you are known, you are loved by Jesus.</p>
-
-        <p>This book invites you into a space of honesty, presence, and restoration. It is a call to speak, to listen, to intervene, and to protect. It is a call to rise, not only for yourself but for the brothers and sisters around you, to honor the high calling that God has placed before His people.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Bruised reeds bend, but they do not break. They sway, but they endure. And when the church remembers how to love as Jesus loved, when holiness is paired with humanity, when truth is spoken in mercy, healing begins. This book is an invitation to witness that healing, to participate in it, and to walk forward into the fullness of your calling.</p>
-
-        <div class="footer-nav">
-            <span></span>
-            <a href="chapter1.html">Next Chapter →</a>
-        </div>
-
-    </div>
-
 </div>
+
+</section>
+
+</main>
 
 <footer>
 
-    <p class="highlight">Bruised Reeds: When Holiness Becomes a Weapon</p>
-    <p>Written by Bradley Hobbs</p>
+<div class="footer-wrap">
 
-    <p>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="chapter1.html">Chapter 1</a>
-    </p>
+<h2 class="footer-title">
 
-    <p>You are seen. You are known. You are loved by Jesus.</p>
+Bruised Reeds
 
-    <p>© 2026 Bradley Hobbs. All rights reserved.</p>
+</h2>
+
+<p class="footer-small">
+
+Written by Bradley Hobbs
+
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="chapter1.html">
+
+Chapter 1
+
+</a>
+
+<a href="conclusion.html">
+
+Conclusion
+
+</a>
+
+</div>
+
+<p class="footer-message">
+
+"You are seen. You are known. You are loved by Jesus."
+
+</p>
+
+<div class="divider"></div>
+
+<p class="footer-small">
+
+© 2026 Bradley Hobbs. All Rights Reserved.
+
+</p>
+
+</div>
 
 </footer>
 
 </body>
+
 </html>
