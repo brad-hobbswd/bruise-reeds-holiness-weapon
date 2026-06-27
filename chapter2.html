@@ -1,251 +1,656 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bruised Reeds | Chapter 2</title>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Read Chapter Two of Bruised Reeds by Bradley Hobbs. When Curiosity Becomes Surveillance explores spiritual control, healing, truth, and the compassion of Jesus Christ.">
+
+<meta
+name="author"
+content="Bradley Hobbs">
+
+<title>Bruised Reeds | Chapter Two</title>
 
 <style>
 
-/* ===== RESET ===== */
-* {
-    box-sizing: border-box;
+/*==============================
+RESET
+==============================*/
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+html{
+
+scroll-behavior:smooth;
+
 }
 
-/* ===== BODY ===== */
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: linear-gradient(to bottom, #1a1410, #0f0b08);
-    color: #f5f2eb;
+body{
+
+font-family:
+Georgia,
+"Times New Roman",
+serif;
+
+background:
+linear-gradient(
+180deg,
+#1a1410 0%,
+#15100d 40%,
+#0f0b08 100%);
+
+color:#f5f2eb;
+
+line-height:1.9;
+
+overflow-x:hidden;
+
 }
 
-/* ===== NAV ===== */
-nav {
-    background: #0f0b08;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #2a211c;
+/*==============================
+NAVIGATION
+==============================*/
+
+nav{
+
+background:#0f0b08;
+
+border-bottom:1px solid #2a211c;
+
+padding:18px 25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:24px;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
 }
 
-nav a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
+nav a{
+
+color:#d4af37;
+
+text-decoration:none;
+
+font-size:15px;
+
+letter-spacing:.5px;
+
+transition:color .3s ease;
+
 }
 
-nav a:hover {
-    color: #e6c76b;
+nav a:hover{
+
+color:#f1d889;
+
 }
 
-/* ===== HERO BANNER ===== */
-.hero {
-    width: 100%;
-    height: 420px;
-    overflow: hidden;
-    position: relative;
+/*==============================
+HERO
+==============================*/
+
+.hero{
+
+width:100%;
+
+background:#0f0b08;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:35px 20px;
+
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 18%;
+.hero img{
+
+width:100%;
+
+max-width:1600px;
+
+height:auto;
+
+display:block;
+
+object-fit:contain;
+
 }
 
-/* ===== CONTAINER ===== */
-.container {
-    max-width: 850px;
-    margin: auto;
-    padding: 20px;
+/*==============================
+MAIN
+==============================*/
+
+main{
+
+padding:70px 25px;
+
 }
 
-/* ===== CONTENT ===== */
-.content {
-    background: #1f1813;
-    padding: 45px 35px;
-    border-radius: 12px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+/*==============================
+CHAPTER
+==============================*/
+
+.content{
+
+max-width:950px;
+
+margin:auto;
+
 }
 
-/* ===== TITLE ===== */
-.content h3 {
-    text-align: center;
-    color: #d4af37;
-    margin-bottom: 35px;
-    letter-spacing: 1px;
+.content h1{
+
+text-align:center;
+
+font-size:48px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:18px;
+
 }
 
-/* ===== TEXT ===== */
-.content p {
-    line-height: 1.9;
-    margin-bottom: 20px;
+.subtitle{
+
+text-align:center;
+
+font-size:18px;
+
+font-style:italic;
+
+color:#cdbfae;
+
+margin-bottom:60px;
+
 }
 
-/* ===== DIVIDER ===== */
-.divider {
-    text-align: center;
-    margin: 35px 0;
-    color: #3a2f28;
+.article{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(34,26,20,.96),
+
+rgba(23,18,14,.98)
+
+);
+
+border:1px solid rgba(212,175,55,.15);
+
+border-radius:20px;
+
+padding:60px;
+
+box-shadow:
+
+0 25px 60px
+
+rgba(0,0,0,.35);
+
 }
 
-/* ===== FOOTER NAV ===== */
-.footer-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+.article p{
+
+font-size:18px;
+
+line-height:2;
+
+margin-bottom:28px;
+
+color:#d7cec3;
+
 }
 
-.footer-nav a {
-    color: #d4af37;
-    text-decoration: none;
+.divider{
+
+width:90px;
+
+height:1px;
+
+background:#4a3a30;
+
+margin:45px auto;
+
 }
 
-.footer-nav a:hover {
-    color: #e6c76b;
+/*==============================
+CHAPTER NAVIGATION
+==============================*/
+
+.chapter-nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:20px;
+
+margin-top:60px;
+
+flex-wrap:wrap;
+
 }
 
-/* ===== FOOTER ===== */
-footer {
-    margin-top: 70px;
-    background: #0f0b08;
-    border-top: 1px solid #2a211c;
-    padding: 30px 20px;
-    text-align: center;
+.chapter-nav a{
+
+display:inline-block;
+
+padding:14px 28px;
+
+border:1px solid #d4af37;
+
+color:#d4af37;
+
+text-decoration:none;
+
+transition:
+
+background .3s,
+
+color .3s,
+
+transform .3s;
+
 }
 
-footer p {
-    margin: 6px 0;
-    font-size: 13px;
-    color: #a89c8f;
+.chapter-nav a:hover{
+
+background:#d4af37;
+
+color:#0f0b08;
+
+transform:translateY(-2px);
+
 }
 
-footer .highlight {
-    color: #d4af37;
+/*==============================
+FOOTER
+==============================*/
+
+footer{
+
+margin-top:80px;
+
+background:#0b0907;
+
+border-top:1px solid #2a211c;
+
+padding:70px 30px;
+
+text-align:center;
+
 }
 
-footer a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 8px;
-    font-size: 13px;
+.footer-wrap{
+
+max-width:900px;
+
+margin:auto;
+
 }
 
-footer a:hover {
-    color: #e6c76b;
+.footer-title{
+
+font-size:32px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:25px;
+
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-    .hero {
-        height: 300px;
-    }
+.footer-links{
+
+margin:30px 0;
+
 }
 
-@media (max-width: 600px) {
-    .hero {
-        height: 220px;
-    }
+.footer-links a{
 
-    .content {
-        padding: 25px;
-    }
+color:#d4af37;
 
-    .footer-nav {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
+text-decoration:none;
+
+margin:0 12px;
+
+}
+
+.footer-links a:hover{
+
+color:#f1d889;
+
+}
+
+.footer-message{
+
+margin:30px 0;
+
+font-style:italic;
+
+color:#d4af37;
+
+}
+
+.footer-small{
+
+font-size:13px;
+
+color:#9d9184;
+
+margin:8px 0;
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+.hero{
+
+padding:20px 10px;
+
+}
+
+.content h1{
+
+font-size:36px;
+
+}
+
+.article{
+
+padding:32px;
+
+}
+
+.article p{
+
+font-size:17px;
+
+}
+
+.chapter-nav{
+
+justify-content:center;
+
+}
+
+nav{
+
+gap:16px;
+
+}
+
 }
 
 </style>
+
 </head>
 
-<body>
+    <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="introduction.html">Introduction</a>
-    <a href="chapter1.html">Chapter 1</a>
+<nav aria-label="Primary Navigation">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="introduction.html">Introduction</a>
+
+<a href="chapter1.html">Chapter 1</a>
+
 </nav>
 
-<!-- ===== BANNER ===== -->
-<div class="hero">
-    <img src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png" alt="Bruised Reeds Banner">
+<main>
+
+<!-- ==========================
+HERO
+========================== -->
+
+<section class="hero">
+
+<img
+src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png"
+alt="Bruised Reeds Banner"
+loading="eager"
+decoding="async">
+
+</section>
+
+<div style="
+width:90%;
+max-width:1200px;
+height:1px;
+background:#2a211c;
+margin:0 auto 70px;
+"></div>
+
+<!-- ==========================
+CHAPTER TWO
+========================== -->
+
+<section class="content">
+
+<h1>Chapter Two</h1>
+
+<p class="subtitle">
+
+When Curiosity Becomes Surveillance
+
+</p>
+
+<div class="article">
+
+<p>
+
+Curiosity is not dangerous. Jesus asked questions with compassion, listened before speaking, and saw people as individuals rather than problems to solve. Genuine curiosity seeks understanding. Surveillance seeks evidence. One builds trust. The other quietly destroys it.
+
+</p>
+
+<p>
+
+Surveillance does not begin with relationship. It begins with suspicion. It watches without invitation, listens without permission, and interprets without conversation. Words, expressions, friendships, attendance, and even silence become pieces of evidence assembled into conclusions that were never tested by truth. What first appears to be concern slowly becomes control.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Many people recognize the change only after it has already taken hold. Conversations become guarded. Ordinary questions begin to feel like investigations. Someone remarks that they have been praying about you, that they have noticed changes, or that they are trying to discern what God may be doing. Discernment without dialogue ceases to be discernment. It becomes assumption dressed in spiritual language.
+
+</p>
+
+<p>
+
+Eventually, you realize you are no longer being shepherded. You are being observed. Your worship is measured. Your silence is analyzed. Your friendships are questioned. Even your pain becomes suspicious. Instead of receiving compassion, you are asked to defend your heart, explain your motives, or prove your sincerity. When every action is interpreted through suspicion, nothing feels safe.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Surveillance develops its own vocabulary. Words such as concern, burden, accountability, discernment, and covering carry genuine biblical meaning. Yet when separated from love, humility, and relationship, they become instruments of pressure rather than grace. Statements remain intentionally vague. "People are talking." "We've heard some things." "You should be careful." Questions are rarely answered because uncertainty often produces greater control than truth.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+One of the deepest wounds created by spiritual surveillance is being defined before being heard. Meetings occur without your presence. Assumptions replace conversations. Decisions are formed before a single question is asked. Jesus never treated people this way. He listened before He responded. He asked questions before offering answers. He restored dignity by allowing people to speak for themselves. Surveillance removes a person's voice. Jesus restores it.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Living beneath constant observation changes a person. Every word is measured. Every decision is reconsidered. Every conversation is filtered through fear of misunderstanding. Faith slowly becomes performance instead of relationship. Prayer becomes cautious rather than honest. Community begins to feel unsafe, and eventually many quietly disappear, carrying wounds few people ever recognize.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Surveillance does not preserve holiness. It often protects image, reputation, and control. It flourishes wherever questions are discouraged, differences are treated as threats, and authority fears transparency. Systems may appear healthy from the outside while individuals quietly struggle beneath the weight of constant scrutiny.
+
+</p>
+
+<p>
+
+Jesus Himself was watched continually. Religious leaders observed His actions, questioned His motives, criticized His compassion, and searched for reasons to accuse Him. Yet He never allowed suspicion to determine His mission. He continued walking toward broken people with mercy, truth, and unwavering love. His life reminds us that faithfulness is never measured by the opinions of those committed to misunderstanding.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Surveillance is not love. It is not genuine accountability. It is not the heart of biblical holiness. Love invites conversation. Grace seeks understanding. Truth listens before it speaks. Jesus does not follow His people hoping they will fail. He walks beside them, restoring what has been wounded and leading them toward freedom. His presence brings peace, not fear, and His voice always calls His children closer rather than pushing them away.
+
+</p>
+
+<div class="chapter-nav">
+
+<a href="chapter1.html">
+
+← Previous Chapter
+
+</a>
+
+<a href="chapter3.html">
+
+Next Chapter →
+
+</a>
+
 </div>
 
-<div class="container">
-
-    <div class="content">
-
-        <h3>Chapter Two:<br>When Curiosity Becomes Surveillance</h3>
-
-        <p>Curiosity is not dangerous. Jesus asked questions constantly. He listened before He corrected. He looked at people long enough to see them. Surveillance is something else entirely.</p>
-
-        <p>Surveillance does not seek understanding. It seeks evidence. It watches without relationship and listens without consent. It records tone, posture, friendships, and absence, then calls the conclusions spiritual. Many people felt the shift but could not name it. At first, it sounded like care. “We’ve just been praying for you a lot,” someone said. “We’ve noticed you’ve been quieter lately.” “We’re trying to discern some things.” Discernment without dialogue is not discernment. It is assumption wearing a halo.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>There comes a moment when you realize you are no longer being pastored. You are being observed. Your worship is measured. Your silence is analyzed. Your friendships are questioned. Your joy is evaluated for authenticity. Even your suffering becomes suspicious. “Have you checked your heart?” someone asks. “Are you sure there isn’t something you need to repent of?” “We’re sensing some resistance.” Pain is no longer met with compassion. It is interrogated. And once everything becomes a sign, nothing is safe.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Surveillance has its own vocabulary. Words like concern, burden, discernment, covering, and accountability sound spiritual, but when they are used without relationship, they become weapons. “People are talking,” someone says. “We’re hearing some things.” “It would be wise to be careful right now.” Careful of what. No one ever explains. Because the goal is not clarity. It is compliance.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>One of the deepest violations in spiritual spaces is being defined without being heard. Conclusions are drawn, meetings are held, prayers are prayed, and the person at the center of it all is absent. You are told who you are before you are asked who you are. Jesus never did this. He asked blind men what they wanted. He asked sinners their names. He let people speak for themselves. Surveillance removes voice. Jesus restores it.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Being watched creates hypervigilance. You monitor your words, adjust your posture, and second-guess your instincts. You learn to perform safely. Faith becomes exhausting. Prayer becomes guarded. Community becomes dangerous. And the church wonders why people disappear.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Surveillance does not exist to protect holiness. It exists to protect image. It thrives where leaders fear questions, where difference is treated as threat, where control is mistaken for care. The system stays intact. The people slowly unravel. All of it is done in the name of God.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Jesus was watched too. They observed how He healed, who He touched, when He rested, what He allowed. But He never adjusted Himself to their scrutiny. He did not become smaller or seem safer. He did not clarify Himself to appease suspicion. He kept moving toward people. If following Jesus requires constant self-monitoring, then someone has replaced Him with fear.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Surveillance is not love. It is not protection. It is not holiness. It is control. And control always harms the vulnerable first. This chapter exists so you can name what happened to you, so you can stop spiritualizing what was actually invasive, so you can breathe again. Jesus does not watch you to catch you. He walks with you to heal you. Any holiness that requires constant scrutiny has forgotten His face.</p>
-
-        <div class="footer-nav">
-            <a href="chapter1.html">← Previous</a>
-            <a href="chapter3.html">Next Chapter →</a>
-        </div>
-
-    </div>
-
 </div>
+
+</section>
+
+</main>
+
 
 <footer>
 
-    <p class="highlight">Bruised Reeds: When Holiness Becomes a Weapon</p>
-    <p>Written by Bradley Hobbs</p>
+<div class="footer-wrap">
 
-    <p>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="introduction.html">Introduction</a> |
-        <a href="chapter3.html">Chapter 3</a>
-    </p>
+<h2 class="footer-title">
 
-    <p>You are seen. You are known. You are loved by Jesus.</p>
+Bruised Reeds
 
-    <p>© 2026 Bradley Hobbs. All rights reserved.</p>
+</h2>
+
+<p class="footer-small">
+
+Written by Bradley Hobbs
+
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="introduction.html">
+
+Introduction
+
+</a>
+
+<a href="chapter2.html">
+
+Chapter 2
+
+</a>
+
+<a href="chapter3.html">
+
+Chapter 3
+
+</a>
+
+</div>
+
+<p class="footer-message">
+
+"You are seen. You are known. You are loved by Jesus."
+
+</p>
+
+<div class="divider"></div>
+
+<p class="footer-small">
+
+© 2026 Bradley Hobbs. All Rights Reserved.
+
+</p>
+
+</div>
 
 </footer>
 
 </body>
+
 </html>
