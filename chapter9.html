@@ -1,259 +1,649 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bruised Reeds | Chapter 9</title>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Read Chapter Nine of Bruised Reeds by Bradley Hobbs. The Role of the Church explores biblical restoration, compassionate leadership, and reflecting the heart of Jesus Christ.">
+
+<meta
+name="author"
+content="Bradley Hobbs">
+
+<title>Bruised Reeds | Chapter Nine</title>
 
 <style>
 
-/* ===== RESET ===== */
-* {
-    box-sizing: border-box;
+/*==============================
+RESET
+==============================*/
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+html{
+
+scroll-behavior:smooth;
+
 }
 
-/* ===== BODY ===== */
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: linear-gradient(to bottom, #1a1410, #0f0b08);
-    color: #f5f2eb;
+body{
+
+font-family:
+Georgia,
+"Times New Roman",
+serif;
+
+background:
+linear-gradient(
+180deg,
+#1a1410 0%,
+#15100d 40%,
+#0f0b08 100%);
+
+color:#f5f2eb;
+
+line-height:1.9;
+
+overflow-x:hidden;
+
 }
 
-/* ===== NAV ===== */
-nav {
-    background: #0f0b08;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #2a211c;
+/*==============================
+NAVIGATION
+==============================*/
+
+nav{
+
+background:#0f0b08;
+
+border-bottom:1px solid #2a211c;
+
+padding:18px 25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:24px;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
 }
 
-nav a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
+nav a{
+
+color:#d4af37;
+
+text-decoration:none;
+
+font-size:15px;
+
+letter-spacing:.5px;
+
+transition:color .3s ease;
+
 }
 
-nav a:hover {
-    color: #e6c76b;
+nav a:hover{
+
+color:#f1d889;
+
 }
 
-/* ===== HERO BANNER ===== */
-.hero {
-    width: 100%;
-    height: 420px;
-    overflow: hidden;
-    position: relative;
+/*==============================
+HERO
+==============================*/
+
+.hero{
+
+width:100%;
+
+background:#0f0b08;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:35px 20px;
+
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 18%;
+.hero img{
+
+width:100%;
+
+max-width:1600px;
+
+height:auto;
+
+display:block;
+
+object-fit:contain;
+
 }
 
-/* ===== CONTAINER ===== */
-.container {
-    max-width: 850px;
-    margin: auto;
-    padding: 20px;
+/*==============================
+MAIN
+==============================*/
+
+main{
+
+padding:70px 25px;
+
 }
 
-/* ===== CONTENT ===== */
-.content {
-    background: #1f1813;
-    padding: 45px 35px;
-    border-radius: 12px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+/*==============================
+CHAPTER
+==============================*/
+
+.content{
+
+max-width:950px;
+
+margin:auto;
+
 }
 
-/* ===== TITLE ===== */
-.content h3 {
-    text-align: center;
-    color: #d4af37;
-    margin-bottom: 35px;
-    letter-spacing: 1px;
+.content h1{
+
+text-align:center;
+
+font-size:48px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:18px;
+
 }
 
-/* ===== TEXT ===== */
-.content p {
-    line-height: 1.9;
-    margin-bottom: 20px;
+.subtitle{
+
+text-align:center;
+
+font-size:18px;
+
+font-style:italic;
+
+color:#cdbfae;
+
+margin-bottom:60px;
+
 }
 
-/* ===== DIVIDER ===== */
-.divider {
-    text-align: center;
-    margin: 35px 0;
-    color: #3a2f28;
+.article{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(34,26,20,.96),
+
+rgba(23,18,14,.98)
+
+);
+
+border:1px solid rgba(212,175,55,.15);
+
+border-radius:20px;
+
+padding:60px;
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.35);
+
 }
 
-/* ===== FOOTER NAV ===== */
-.footer-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+.article p{
+
+font-size:18px;
+
+line-height:2;
+
+margin-bottom:28px;
+
+color:#d7cec3;
+
 }
 
-.footer-nav a {
-    color: #d4af37;
-    text-decoration: none;
+.divider{
+
+width:90px;
+
+height:1px;
+
+background:#4a3a30;
+
+margin:45px auto;
+
 }
 
-.footer-nav a:hover {
-    color: #e6c76b;
+/*==============================
+CHAPTER NAVIGATION
+==============================*/
+
+.chapter-nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:20px;
+
+margin-top:60px;
+
+flex-wrap:wrap;
+
 }
 
-/* ===== FOOTER ===== */
-footer {
-    margin-top: 70px;
-    background: #0f0b08;
-    border-top: 1px solid #2a211c;
-    padding: 30px 20px;
-    text-align: center;
+.chapter-nav a{
+
+display:inline-block;
+
+padding:14px 28px;
+
+border:1px solid #d4af37;
+
+color:#d4af37;
+
+text-decoration:none;
+
+transition:
+
+background .3s,
+
+color .3s,
+
+transform .3s;
+
 }
 
-footer p {
-    margin: 6px 0;
-    font-size: 13px;
-    color: #a89c8f;
+.chapter-nav a:hover{
+
+background:#d4af37;
+
+color:#0f0b08;
+
+transform:translateY(-2px);
+
 }
 
-footer .highlight {
-    color: #d4af37;
+/*==============================
+FOOTER
+==============================*/
+
+footer{
+
+margin-top:80px;
+
+background:#0b0907;
+
+border-top:1px solid #2a211c;
+
+padding:70px 30px;
+
+text-align:center;
+
 }
 
-footer a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 8px;
-    font-size: 13px;
+.footer-wrap{
+
+max-width:900px;
+
+margin:auto;
+
 }
 
-footer a:hover {
-    color: #e6c76b;
+.footer-title{
+
+font-size:32px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:25px;
+
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-    .hero {
-        height: 300px;
-    }
+.footer-links{
+
+margin:30px 0;
+
 }
 
-@media (max-width: 600px) {
-    .hero {
-        height: 220px;
-    }
+.footer-links a{
 
-    .content {
-        padding: 25px;
-    }
+color:#d4af37;
 
-    .footer-nav {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
+text-decoration:none;
+
+margin:0 12px;
+
+}
+
+.footer-links a:hover{
+
+color:#f1d889;
+
+}
+
+.footer-message{
+
+margin:30px 0;
+
+font-style:italic;
+
+color:#d4af37;
+
+}
+
+.footer-small{
+
+font-size:13px;
+
+color:#9d9184;
+
+margin:8px 0;
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+.hero{
+
+padding:20px 10px;
+
+}
+
+.content h1{
+
+font-size:36px;
+
+}
+
+.article{
+
+padding:32px;
+
+}
+
+.article p{
+
+font-size:17px;
+
+}
+
+.chapter-nav{
+
+justify-content:center;
+
+}
+
+nav{
+
+gap:16px;
+
+}
+
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="introduction.html">Introduction</a>
-    <a href="chapter1.html">Chapter 1</a>
+<nav aria-label="Primary Navigation">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="introduction.html">Introduction</a>
+
+<a href="chapter1.html">Chapter 1</a>
+
 </nav>
 
-<!-- ===== BANNER ===== -->
-<div class="hero">
-    <img src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png" alt="Bruised Reeds Banner">
+<main>
+
+<!-- ==========================
+HERO
+========================== -->
+
+<section class="hero">
+
+<img
+src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png"
+alt="Bruised Reeds Banner"
+loading="eager"
+decoding="async">
+
+</section>
+
+<div style="
+width:90%;
+max-width:1200px;
+height:1px;
+background:#2a211c;
+margin:0 auto 70px;
+"></div>
+
+<!-- ==========================
+CHAPTER NINE
+========================== -->
+
+<section class="content">
+
+<h1>Chapter Nine</h1>
+
+<p class="subtitle">
+
+The Role of the Church
+
+</p>
+
+<div class="article">
+
+<p>
+
+The Church was never intended to be a place where wounded people learned to fear being known. It was established to be a refuge where weary hearts could find rest, broken lives could experience restoration, and every person could encounter the love of Jesus Christ. A bruised reed should discover hope within the fellowship of believers, not another reason to hide.
+
+</p>
+
+<p>
+
+When the Church loses sight of its purpose, something precious is lost. Conversations become more important than compassion. Protecting reputation becomes more urgent than protecting people. Suspicion begins moving faster than grace, and those who need encouragement most often become the ones carrying the greatest burdens. Yet this was never the example Christ established for His followers.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+The role of the Church is not built upon control, superiority, or preserving appearances. Its calling is to reflect the character of Jesus. His ministry consistently revealed mercy alongside truth, holiness joined with compassion, and authority expressed through humble service. Wherever Christ walked, people encountered dignity before judgment and restoration before rejection.
+
+</p>
+
+<p>
+
+Healthy spiritual leadership protects rather than intimidates. It listens before drawing conclusions. It welcomes honest questions instead of fearing them. It values relationship more highly than appearances and recognizes that genuine discipleship grows best within an atmosphere of grace, accountability, and mutual respect.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Throughout history, the Church has accomplished extraordinary good whenever it has reflected the heart of Christ. It has cared for the forgotten, welcomed the outcast, defended the vulnerable, and proclaimed hope to those who believed they had none. Those moments remind us what the Church becomes when it faithfully reflects its Savior.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Every congregation has the opportunity to become that kind of community today. Leaders are called to shepherd with humility rather than fear. Members are called to speak truth with kindness, to protect one another's dignity, and to interrupt gossip before it becomes accepted as fact. Restoration flourishes where people choose presence over assumption and conversation over suspicion.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+The Church also bears the responsibility of creating places where people feel safe enough to ask difficult questions, admit weakness, and pursue spiritual growth without fearing rejection. Mercy does not weaken holiness. Instead, mercy demonstrates the very heart of God, whose desire is always to restore rather than destroy.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Living out this calling requires courage. It asks believers to acknowledge failures, seek forgiveness where harm has occurred, and intentionally rebuild trust through honesty and compassion. Such work is rarely easy, yet it reflects the ministry Jesus entrusted to His people. Healing communities are built one faithful conversation, one restored relationship, and one act of grace at a time.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Bruised reeds do not need to earn their place within the family of God. They already possess immeasurable worth because they are loved by Christ. The Church honors Him most faithfully when it stands beside the wounded, lifts those who have fallen, protects those who feel vulnerable, and reminds every believer that they are never beyond the reach of God's restoring love.
+
+</p>
+
+<div class="chapter-nav">
+
+<a href="chapter8.html">
+
+← Chapter Eight
+
+</a>
+
+<a href="conclusion.html">
+
+Conclusion →
+
+</a>
+
 </div>
 
-<div class="container">
-
-    <div class="content">
-
-        <h3>Chapter Nine:<br>The Role of the Church</h3>
-
-        <p>The church is meant to be a sanctuary, a refuge, a place where bruised reeds can bend without breaking, where the weary can rest without fear, where the broken can be made whole in the presence of Jesus. Yet too often, the very people who should be protected are the ones most harmed. The church becomes a place where whispers carry more weight than prayers, where suspicion moves faster than love, and where holiness is used to wound instead of restoring.</p>
-
-        <p>The role of the church is not to control. It is not to judge. It is not to preserve image over people. Its role is to reflect Jesus. To mirror His love, His mercy, His patience, His presence. To step into the lives of the bruised and the weary with hands ready to heal and hearts ready to protect.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Too often, the church confuses authority with superiority, doctrine with judgment, and leadership with privilege. The result is pain: people are silenced, misrepresented, excluded, and scrutinized. They are told they are cared for, but their care is conditional, measured by obedience rather than humanity, by compliance rather than faith. The very people who should feel safe are left navigating fear in spaces that were meant to be holy.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Jesus never operated this way. He never hid people’s struggles behind doctrine. He never prayed over someone while excluding them. He never labeled people in their absence. He never allowed rules to replace relationships. His holiness was always present with humanity, always tender with the weak, always redemptive with the broken.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>The church must learn this again. It must remember that bruised reeds are sacred in God’s sight. The smoking wick is precious. Those who have been harmed are not the problem; the failure to protect them is. Leaders must lead with courage, not fear. Members must speak with love, not assumption. Conversations must invite presence, not absence. Accountability must restore, not punish.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>The church is called to create spaces where questions are safe, where doubts are honored, where diversity is welcomed, where mistakes are met with mercy. It is called to act as a family that bears one another’s burdens with compassion, not gossip or condemnation. It is called to recognize harm, confront it, and restore those who have been wounded by the very community meant to nurture them.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>This is not easy. It requires courage. It requires humility. It requires the willingness to admit mistakes and confront uncomfortable truths. It requires the church to move beyond control, beyond fear, beyond superficial holiness. It requires the church to become a reflection of Jesus; present, compassionate, redemptive, and unwavering in love.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Bruised reeds are not to be discarded. They are not to be silenced. They are not to be used as examples of what happens to those who do not conform. They are to be loved, protected, and elevated. They are the ones who carry the mark of resilience, the evidence of faith, the testimony of God’s sustaining power.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>The church exists to nurture them, to safeguard them, to lift them when they stumble, and to celebrate them when they rise. When the church remembers this, when it embodies this, when it reflects Jesus in every word, every conversation, every action, holiness becomes what it was always meant to be; life-giving, protective, and restorative.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>The high calling of God is not reached by fear or silence or exclusion. It is reached when His people learn to love as Jesus loved, to speak as Jesus spoke, to restore as Jesus restored. The church has a sacred role in this work. It is a role that cannot be ignored, postponed, or delegated. It is a role that calls for courage, integrity, and faithfulness.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Bruised reeds do not need to prove themselves to the church. They need the church to stand with them, beside them, and for them. And when the church fulfills this role, the body of Christ is whole, the gospel is honored, and Jesus is revealed in the lives of those who were once silenced but now rise to the fullness of His calling.</p>
-
-        <div class="footer-nav">
-            <a href="chapter8.html">← Previous</a>
-            <a href="conclusion.html">Conclusion →</a>
-        </div>
-
-    </div>
-
 </div>
+
+</section>
+
+</main>
+
 
 <footer>
 
-    <p class="highlight">Bruised Reeds: When Holiness Becomes a Weapon</p>
-    <p>Written by Bradley Hobbs</p>
+<div class="footer-wrap">
 
-    <p>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="introduction.html">Introduction</a> |
-        <a href="conclusion.html">Conclusion</a>
-    </p>
+<h2 class="footer-title">
 
-    <p>You are seen. You are known. You are loved by Jesus.</p>
+Bruised Reeds
 
-    <p>© 2026 Bradley Hobbs. All rights reserved.</p>
+</h2>
+
+<p class="footer-small">
+
+Written by Bradley Hobbs
+
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="introduction.html">
+
+Introduction
+
+</a>
+
+<a href="chapter9.html">
+
+Chapter 9
+
+</a>
+
+<a href="conclusion.html">
+
+Conclusion
+
+</a>
+
+</div>
+
+<p class="footer-message">
+
+"You are seen. You are known. You are loved by Jesus."
+
+</p>
+
+<div class="divider"></div>
+
+<p class="footer-small">
+
+© 2026 Bradley Hobbs. All Rights Reserved.
+
+</p>
+
+</div>
 
 </footer>
 
 </body>
+
 </html>
