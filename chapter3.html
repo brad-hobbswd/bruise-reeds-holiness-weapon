@@ -1,243 +1,637 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bruised Reeds | Chapter 3</title>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Read Chapter Three of Bruised Reeds by Bradley Hobbs. Labels That Preach Louder than Pulpits explores identity, church hurt, truth, and the compassion of Jesus Christ.">
+
+<meta
+name="author"
+content="Bradley Hobbs">
+
+<title>Bruised Reeds | Chapter Three</title>
 
 <style>
 
-/* ===== RESET ===== */
-* {
-    box-sizing: border-box;
+/*==============================
+RESET
+==============================*/
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+html{
+
+scroll-behavior:smooth;
+
 }
 
-/* ===== BODY ===== */
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: linear-gradient(to bottom, #1a1410, #0f0b08);
-    color: #f5f2eb;
+body{
+
+font-family:
+Georgia,
+"Times New Roman",
+serif;
+
+background:
+linear-gradient(
+180deg,
+#1a1410 0%,
+#15100d 40%,
+#0f0b08 100%);
+
+color:#f5f2eb;
+
+line-height:1.9;
+
+overflow-x:hidden;
+
 }
 
-/* ===== NAV ===== */
-nav {
-    background: #0f0b08;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #2a211c;
+/*==============================
+NAVIGATION
+==============================*/
+
+nav{
+
+background:#0f0b08;
+
+border-bottom:1px solid #2a211c;
+
+padding:18px 25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:24px;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
 }
 
-nav a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
+nav a{
+
+color:#d4af37;
+
+text-decoration:none;
+
+font-size:15px;
+
+letter-spacing:.5px;
+
+transition:color .3s ease;
+
 }
 
-nav a:hover {
-    color: #e6c76b;
+nav a:hover{
+
+color:#f1d889;
+
 }
 
-/* ===== HERO BANNER ===== */
-.hero {
-    width: 100%;
-    height: 420px;
-    overflow: hidden;
-    position: relative;
+/*==============================
+HERO
+==============================*/
+
+.hero{
+
+width:100%;
+
+background:#0f0b08;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:35px 20px;
+
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 18%;
+.hero img{
+
+width:100%;
+
+max-width:1600px;
+
+height:auto;
+
+display:block;
+
+object-fit:contain;
+
 }
 
-/* ===== CONTAINER ===== */
-.container {
-    max-width: 850px;
-    margin: auto;
-    padding: 20px;
+/*==============================
+MAIN
+==============================*/
+
+main{
+
+padding:70px 25px;
+
 }
 
-/* ===== CONTENT ===== */
-.content {
-    background: #1f1813;
-    padding: 45px 35px;
-    border-radius: 12px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+/*==============================
+CHAPTER
+==============================*/
+
+.content{
+
+max-width:950px;
+
+margin:auto;
+
 }
 
-/* ===== TITLE ===== */
-.content h3 {
-    text-align: center;
-    color: #d4af37;
-    margin-bottom: 35px;
-    letter-spacing: 1px;
+.content h1{
+
+text-align:center;
+
+font-size:48px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:18px;
+
 }
 
-/* ===== TEXT ===== */
-.content p {
-    line-height: 1.9;
-    margin-bottom: 20px;
+.subtitle{
+
+text-align:center;
+
+font-size:18px;
+
+font-style:italic;
+
+color:#cdbfae;
+
+margin-bottom:60px;
+
 }
 
-/* ===== DIVIDER ===== */
-.divider {
-    text-align: center;
-    margin: 35px 0;
-    color: #3a2f28;
+.article{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(34,26,20,.96),
+
+rgba(23,18,14,.98)
+
+);
+
+border:1px solid rgba(212,175,55,.15);
+
+border-radius:20px;
+
+padding:60px;
+
+box-shadow:
+
+0 25px 60px
+
+rgba(0,0,0,.35);
+
 }
 
-/* ===== FOOTER NAV ===== */
-.footer-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+.article p{
+
+font-size:18px;
+
+line-height:2;
+
+margin-bottom:28px;
+
+color:#d7cec3;
+
 }
 
-.footer-nav a {
-    color: #d4af37;
-    text-decoration: none;
+.divider{
+
+width:90px;
+
+height:1px;
+
+background:#4a3a30;
+
+margin:45px auto;
+
 }
 
-.footer-nav a:hover {
-    color: #e6c76b;
+/*==============================
+CHAPTER NAVIGATION
+==============================*/
+
+.chapter-nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:20px;
+
+margin-top:60px;
+
+flex-wrap:wrap;
+
 }
 
-/* ===== FOOTER ===== */
-footer {
-    margin-top: 70px;
-    background: #0f0b08;
-    border-top: 1px solid #2a211c;
-    padding: 30px 20px;
-    text-align: center;
+.chapter-nav a{
+
+display:inline-block;
+
+padding:14px 28px;
+
+border:1px solid #d4af37;
+
+color:#d4af37;
+
+text-decoration:none;
+
+transition:
+
+background .3s,
+
+color .3s,
+
+transform .3s;
+
 }
 
-footer p {
-    margin: 6px 0;
-    font-size: 13px;
-    color: #a89c8f;
+.chapter-nav a:hover{
+
+background:#d4af37;
+
+color:#0f0b08;
+
+transform:translateY(-2px);
+
 }
 
-footer .highlight {
-    color: #d4af37;
+/*==============================
+FOOTER
+==============================*/
+
+footer{
+
+margin-top:80px;
+
+background:#0b0907;
+
+border-top:1px solid #2a211c;
+
+padding:70px 30px;
+
+text-align:center;
+
 }
 
-footer a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 8px;
-    font-size: 13px;
+.footer-wrap{
+
+max-width:900px;
+
+margin:auto;
+
 }
 
-footer a:hover {
-    color: #e6c76b;
+.footer-title{
+
+font-size:32px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:25px;
+
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-    .hero {
-        height: 300px;
-    }
+.footer-links{
+
+margin:30px 0;
+
 }
 
-@media (max-width: 600px) {
-    .hero {
-        height: 220px;
-    }
+.footer-links a{
 
-    .content {
-        padding: 25px;
-    }
+color:#d4af37;
 
-    .footer-nav {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
+text-decoration:none;
+
+margin:0 12px;
+
+}
+
+.footer-links a:hover{
+
+color:#f1d889;
+
+}
+
+.footer-message{
+
+margin:30px 0;
+
+font-style:italic;
+
+color:#d4af37;
+
+}
+
+.footer-small{
+
+font-size:13px;
+
+color:#9d9184;
+
+margin:8px 0;
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+.hero{
+
+padding:20px 10px;
+
+}
+
+.content h1{
+
+font-size:36px;
+
+}
+
+.article{
+
+padding:32px;
+
+}
+
+.article p{
+
+font-size:17px;
+
+}
+
+.chapter-nav{
+
+justify-content:center;
+
+}
+
+nav{
+
+gap:16px;
+
+}
+
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="introduction.html">Introduction</a>
-    <a href="chapter1.html">Chapter 1</a>
+<nav aria-label="Primary Navigation">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="introduction.html">Introduction</a>
+
+<a href="chapter1.html">Chapter 1</a>
+
 </nav>
 
-<!-- ===== BANNER ===== -->
-<div class="hero">
-    <img src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png" alt="Bruised Reeds Banner">
+<main>
+
+<!-- ==========================
+HERO
+========================== -->
+
+<section class="hero">
+
+<img
+src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png"
+alt="Bruised Reeds Banner"
+loading="eager"
+decoding="async">
+
+</section>
+
+<div style="
+width:90%;
+max-width:1200px;
+height:1px;
+background:#2a211c;
+margin:0 auto 70px;
+"></div>
+
+<!-- ==========================
+CHAPTER THREE
+========================== -->
+
+<section class="content">
+
+<h1>Chapter Three</h1>
+
+<p class="subtitle">
+
+Labels That Preach Louder than Pulpits
+
+</p>
+
+<div class="article">
+
+<p>
+
+A label is never just a word. It becomes a conclusion reached before a conversation ever begins. Once someone has been labeled, curiosity often disappears, listening comes to an end, and complexity is replaced with assumption. In many churches, labels preach louder than sermons because they shape how people are viewed long before anyone has the opportunity to speak for themselves.
+
+</p>
+
+<p>
+
+Most labels are not spoken directly to the person they describe. They are exchanged quietly in conversations, prayer meetings, and whispered concerns. Someone says, "You know how they are," or, "They're struggling with something." Suddenly, an entire life is reduced to a single description. Rumor begins to carry more authority than relationship, and the label spreads further than the truth ever could.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Labels become a form of theology without careful study. They quietly teach people what to believe about someone else, how to interpret every action, and even how to respond before a single conversation has taken place. Once labeled, joy becomes suspicious, motives are questioned, sincerity is doubted, and repentance is rarely believed. Every action is interpreted through the lens of the assigned identity rather than the reality of the individual.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Frequently these labels are defended with spiritual language. People claim they are simply calling things as they see them or standing firmly for biblical truth. Yet truth separated from love becomes accusation rather than restoration. Jesus never introduced people by their failures. He refused to define individuals by the worst moments of their lives. Instead, He consistently looked beyond appearances and saw the value, dignity, and purpose that others overlooked.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+When labels become fixed, defending yourself often feels pointless. Explanations no longer matter because conclusions have already been reached. Conversations become uncomfortable. Relationships become distant. Some people begin treating you as someone who must be rescued. Others quietly judge from a distance. Still others simply disappear. What remains is isolation that few people recognize for what it truly is.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Jesus Himself was repeatedly labeled by those who misunderstood Him. He was called a blasphemer, a lawbreaker, and a friend of sinners. Yet He never accepted those false identities, nor did He allow them to determine His mission. Instead, He continued calling people by name, restoring their dignity, and reminding them of their worth before God. He consistently placed compassion ahead of accusation and relationship ahead of assumption.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Labels begin losing their power the moment someone chooses truth instead of rumor. Healing begins when a believer asks, "Have you actually spoken with them?" Restoration begins when someone refuses to repeat what they did not witness. The strongest sermon in a church is not always preached from the pulpit. Sometimes it is spoken quietly in conversations no one else hears. May our words always reflect the heart of Jesus, who restores identity instead of reducing people to labels.
+
+</p>
+
+<div class="chapter-nav">
+
+<a href="chapter2.html">
+
+← Chapter Two
+
+</a>
+
+<a href="chapter4.html">
+
+Chapter Four →
+
+</a>
+
 </div>
 
-<div class="container">
-
-    <div class="content">
-
-        <h3>Chapter Three:<br>Labels That Preach Louder than Pulpits</h3>
-
-        <p>A label is not just a word. It is a shortcut to a conclusion. Once a label is spoken, curiosity stops. Listening ends. Complexity is dismissed. In the church, labels often preach louder than pulpits ever could. No sermon is needed once a name has been assigned.</p>
-
-        <p>Most labels are not spoken to the person they describe. They are spoken about them. Quietly, prayerfully, confidently. “You know how they are,” someone says. “It’s that spirit.” “They’re struggling with something.” Something becomes everything. A whole life reduced to a category. A soul flattened into a rumor. And the label spreads faster than truth ever could.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Labels function as theology without study. They tell people what to think, how to feel, and how to respond. Once labeled, your joy is questioned, your motives are doubted, your sincerity is suspect, your repentance is never enough. Every action is filtered through the assigned name. You no longer get to be human. You only get to be consistent with the label.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Labels are often wrapped in spiritual language. “We’re just calling it what it is.” “The Bible is clear.” “We can’t compromise truth.” But truth without relationship becomes accusation. Jesus never introduced people by their worst moment. He never defined them by suspicion. He never used a word to avoid a conversation. The church often does the opposite.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Defense is often not rebellion. It is self-preservation. When labels are already fixed, explanation becomes pointless. Once labeled, the room changes. People talk differently around you. They stop asking real questions. They become cautious with affection. Some become saviors. Some become judges. Some disappear. No one calls it what it is. Isolation.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Jesus was constantly offered labels: sinner, blasphemer, lawbreaker, friend of the wrong people. He rejected them all. He called people by name. He saw the image of God before the accusation. He restored identity before behavior. If God is one and His name is Jesus, labeling His people is not neutral. It is personal.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Labels lose power when named. When someone says, “That is not a person. That is a rumor.” When someone asks, “Have you actually spoken to them?” When someone refuses to repeat what they did not witness. This is how violence is interrupted. The loudest sermon in the room is often not from the pulpit. It is the word spoken behind closed doors. Jesus is listening.</p>
-
-        <div class="footer-nav">
-            <a href="chapter2.html">← Previous</a>
-            <a href="chapter4.html">Next Chapter →</a>
-        </div>
-
-    </div>
-
 </div>
+
+</section>
+
+</main>
+
 
 <footer>
 
-    <p class="highlight">Bruised Reeds: When Holiness Becomes a Weapon</p>
-    <p>Written by Bradley Hobbs</p>
+<div class="footer-wrap">
 
-    <p>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="introduction.html">Introduction</a> |
-        <a href="chapter4.html">Chapter 4</a>
-    </p>
+<h2 class="footer-title">
 
-    <p>You are seen. You are known. You are loved by Jesus.</p>
+Bruised Reeds
 
-    <p>© 2026 Bradley Hobbs. All rights reserved.</p>
+</h2>
+
+<p class="footer-small">
+
+Written by Bradley Hobbs
+
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="introduction.html">
+
+Introduction
+
+</a>
+
+<a href="chapter3.html">
+
+Chapter 3
+
+</a>
+
+<a href="chapter4.html">
+
+Chapter 4
+
+</a>
+
+</div>
+
+<p class="footer-message">
+
+"You are seen. You are known. You are loved by Jesus."
+
+</p>
+
+<div class="divider"></div>
+
+<p class="footer-small">
+
+© 2026 Bradley Hobbs. All Rights Reserved.
+
+</p>
+
+</div>
 
 </footer>
 
 </body>
+
 </html>
