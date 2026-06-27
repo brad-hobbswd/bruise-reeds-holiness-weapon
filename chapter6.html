@@ -1,251 +1,653 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bruised Reeds | Chapter 6</title>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Read Chapter Six of Bruised Reeds by Bradley Hobbs. Survival Mechanisms and Coping explores healing from church hurt, resilience, restoration, and the compassion of Jesus Christ.">
+
+<meta
+name="author"
+content="Bradley Hobbs">
+
+<title>Bruised Reeds | Chapter Six</title>
 
 <style>
 
-/* ===== RESET ===== */
-* {
-    box-sizing: border-box;
+/*==============================
+RESET
+==============================*/
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+html{
+
+scroll-behavior:smooth;
+
 }
 
-/* ===== BODY ===== */
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: linear-gradient(to bottom, #1a1410, #0f0b08);
-    color: #f5f2eb;
+body{
+
+font-family:
+Georgia,
+"Times New Roman",
+serif;
+
+background:
+linear-gradient(
+180deg,
+#1a1410 0%,
+#15100d 40%,
+#0f0b08 100%);
+
+color:#f5f2eb;
+
+line-height:1.9;
+
+overflow-x:hidden;
+
 }
 
-/* ===== NAV ===== */
-nav {
-    background: #0f0b08;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #2a211c;
+/*==============================
+NAVIGATION
+==============================*/
+
+nav{
+
+background:#0f0b08;
+
+border-bottom:1px solid #2a211c;
+
+padding:18px 25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:24px;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
 }
 
-nav a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
+nav a{
+
+color:#d4af37;
+
+text-decoration:none;
+
+font-size:15px;
+
+letter-spacing:.5px;
+
+transition:color .3s ease;
+
 }
 
-nav a:hover {
-    color: #e6c76b;
+nav a:hover{
+
+color:#f1d889;
+
 }
 
-/* ===== HERO BANNER ===== */
-.hero {
-    width: 100%;
-    height: 420px;
-    overflow: hidden;
-    position: relative;
+/*==============================
+HERO
+==============================*/
+
+.hero{
+
+width:100%;
+
+background:#0f0b08;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:35px 20px;
+
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 18%;
+.hero img{
+
+width:100%;
+
+max-width:1600px;
+
+height:auto;
+
+display:block;
+
+object-fit:contain;
+
 }
 
-/* ===== CONTAINER ===== */
-.container {
-    max-width: 850px;
-    margin: auto;
-    padding: 20px;
+/*==============================
+MAIN
+==============================*/
+
+main{
+
+padding:70px 25px;
+
 }
 
-/* ===== CONTENT ===== */
-.content {
-    background: #1f1813;
-    padding: 45px 35px;
-    border-radius: 12px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+/*==============================
+CHAPTER
+==============================*/
+
+.content{
+
+max-width:950px;
+
+margin:auto;
+
 }
 
-/* ===== TITLE ===== */
-.content h3 {
-    text-align: center;
-    color: #d4af37;
-    margin-bottom: 35px;
-    letter-spacing: 1px;
+.content h1{
+
+text-align:center;
+
+font-size:48px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:18px;
+
 }
 
-/* ===== TEXT ===== */
-.content p {
-    line-height: 1.9;
-    margin-bottom: 20px;
+.subtitle{
+
+text-align:center;
+
+font-size:18px;
+
+font-style:italic;
+
+color:#cdbfae;
+
+margin-bottom:60px;
+
 }
 
-/* ===== DIVIDER ===== */
-.divider {
-    text-align: center;
-    margin: 35px 0;
-    color: #3a2f28;
+.article{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(34,26,20,.96),
+
+rgba(23,18,14,.98)
+
+);
+
+border:1px solid rgba(212,175,55,.15);
+
+border-radius:20px;
+
+padding:60px;
+
+box-shadow:
+
+0 25px 60px
+
+rgba(0,0,0,.35);
+
 }
 
-/* ===== FOOTER NAV ===== */
-.footer-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+.article p{
+
+font-size:18px;
+
+line-height:2;
+
+margin-bottom:28px;
+
+color:#d7cec3;
+
 }
 
-.footer-nav a {
-    color: #d4af37;
-    text-decoration: none;
+.divider{
+
+width:90px;
+
+height:1px;
+
+background:#4a3a30;
+
+margin:45px auto;
+
 }
 
-.footer-nav a:hover {
-    color: #e6c76b;
+/*==============================
+CHAPTER NAVIGATION
+==============================*/
+
+.chapter-nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:20px;
+
+margin-top:60px;
+
+flex-wrap:wrap;
+
 }
 
-/* ===== FOOTER ===== */
-footer {
-    margin-top: 70px;
-    background: #0f0b08;
-    border-top: 1px solid #2a211c;
-    padding: 30px 20px;
-    text-align: center;
+.chapter-nav a{
+
+display:inline-block;
+
+padding:14px 28px;
+
+border:1px solid #d4af37;
+
+color:#d4af37;
+
+text-decoration:none;
+
+transition:
+
+background .3s,
+
+color .3s,
+
+transform .3s;
+
 }
 
-footer p {
-    margin: 6px 0;
-    font-size: 13px;
-    color: #a89c8f;
+.chapter-nav a:hover{
+
+background:#d4af37;
+
+color:#0f0b08;
+
+transform:translateY(-2px);
+
 }
 
-footer .highlight {
-    color: #d4af37;
+/*==============================
+FOOTER
+==============================*/
+
+footer{
+
+margin-top:80px;
+
+background:#0b0907;
+
+border-top:1px solid #2a211c;
+
+padding:70px 30px;
+
+text-align:center;
+
 }
 
-footer a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 8px;
-    font-size: 13px;
+.footer-wrap{
+
+max-width:900px;
+
+margin:auto;
+
 }
 
-footer a:hover {
-    color: #e6c76b;
+.footer-title{
+
+font-size:32px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:25px;
+
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-    .hero {
-        height: 300px;
-    }
+.footer-links{
+
+margin:30px 0;
+
 }
 
-@media (max-width: 600px) {
-    .hero {
-        height: 220px;
-    }
+.footer-links a{
 
-    .content {
-        padding: 25px;
-    }
+color:#d4af37;
 
-    .footer-nav {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
+text-decoration:none;
+
+margin:0 12px;
+
+}
+
+.footer-links a:hover{
+
+color:#f1d889;
+
+}
+
+.footer-message{
+
+margin:30px 0;
+
+font-style:italic;
+
+color:#d4af37;
+
+}
+
+.footer-small{
+
+font-size:13px;
+
+color:#9d9184;
+
+margin:8px 0;
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+.hero{
+
+padding:20px 10px;
+
+}
+
+.content h1{
+
+font-size:36px;
+
+}
+
+.article{
+
+padding:32px;
+
+}
+
+.article p{
+
+font-size:17px;
+
+}
+
+.chapter-nav{
+
+justify-content:center;
+
+}
+
+nav{
+
+gap:16px;
+
+}
+
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="introduction.html">Introduction</a>
-    <a href="chapter1.html">Chapter 1</a>
+<nav aria-label="Primary Navigation">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="introduction.html">Introduction</a>
+
+<a href="chapter1.html">Chapter 1</a>
+
 </nav>
 
-<!-- ===== BANNER ===== -->
-<div class="hero">
-    <img src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png" alt="Bruised Reeds Banner">
+<main>
+
+<!-- ==========================
+HERO
+========================== -->
+
+<section class="hero">
+
+<img
+src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png"
+alt="Bruised Reeds Banner"
+loading="eager"
+decoding="async">
+
+</section>
+
+<div style="
+width:90%;
+max-width:1200px;
+height:1px;
+background:#2a211c;
+margin:0 auto 70px;
+"></div>
+
+<!-- ==========================
+CHAPTER SIX
+========================== -->
+
+<section class="content">
+
+<h1>Chapter Six</h1>
+
+<p class="subtitle">
+
+Survival Mechanisms and Coping
+
+</p>
+
+<div class="article">
+
+<p>
+
+When the Church becomes a place of fear instead of refuge, people naturally learn how to survive. They develop quiet ways of protecting themselves while navigating environments that were intended to nurture faith but instead became sources of pain. These survival mechanisms are not evidence of weak faith or spiritual failure. They are often the mind and body's response to repeated hurt and disappointment.
+
+</p>
+
+<p>
+
+Some people learn to hide. They smile while quietly preparing themselves for rejection. They carefully observe every conversation, every expression, and every change in tone. They become skilled at knowing when to speak, when to remain silent, and when it feels safest simply to disappear. Every interaction becomes a careful attempt to avoid another wound.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Others cope by striving for perfection. They volunteer more, serve longer, and carry responsibilities few people notice. They hope that flawless performance will protect them from criticism or suspicion. Their constant activity is often misunderstood as ambition when, in reality, it has become a shield against the fear of not being accepted. Performance becomes armor worn over an exhausted heart.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Some withdraw almost completely. They attend less often, avoid conversations, and slowly distance themselves from the very community they once loved. Isolation begins to feel safer than vulnerability. Solitude becomes a strategy for avoiding additional pain. Although they continue praying for healing, the burden of carrying those wounds alone grows heavier with time.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Other coping strategies remain invisible. Many believers quietly carry their pain without telling anyone. They continue serving faithfully while hiding their struggles. They carefully measure every word, every emotion, and every personal detail, believing that honesty may invite misunderstanding. Over time, they begin editing their own lives until they no longer recognize the freedom they once experienced in genuine Christian fellowship.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Jesus never asked His followers to survive His presence. He invited them to find rest in Him. He welcomed questions, received broken hearts with compassion, and never required perfection before extending love. His ministry consistently demonstrated that acceptance came before transformation and relationship before performance.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Sadly, many believers have learned different lessons through painful experiences within the Church. Their coping mechanisms developed not because they desired distance but because they believed they had no other way to remain emotionally and spiritually safe. They adapted where they should have been protected. They endured where they should have been encouraged.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+This chapter is not written to criticize those survival strategies. Instead, it offers recognition and understanding. Survival is not sin. Coping is not weakness. These responses often reveal the remarkable resilience of people who continued seeking Jesus even while carrying wounds inflicted by those who should have reflected His love.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Healing begins when those protective patterns are understood rather than condemned. Restoration begins when the person beneath the coping strategy is finally seen, heard, and valued. Bruised reeds may bend beneath difficult seasons, yet they remain precious in the hands of Christ. Through His compassion, survival gradually gives way to healing, fear gives way to trust, and weary hearts discover the freedom to live rather than merely endure.
+
+</p>
+
+<div class="chapter-nav">
+
+<a href="chapter5.html">
+
+← Chapter Five
+
+</a>
+
+<a href="chapter7.html">
+
+Chapter Seven →
+
+</a>
+
 </div>
 
-<div class="container">
-
-    <div class="content">
-
-        <h3>Chapter Six:<br>Survival Mechanism and Coping</h3>
-
-        <p>When the church becomes a place of fear instead of refuge, people learn to survive. They develop quiet ways to protect themselves, to navigate spaces that were meant to nurture but instead wound. These survival mechanisms are not sins. They are responses to harm. They are the body’s instinct to preserve life, even in places that should offer safety.</p>
-
-        <p>Some learn to hide. They become experts at smiling while their hearts are bracing for impact. They watch who enters the room, who speaks first, who carries judgment in their gaze. They learn when to remain silent, when to answer with a half-truth, when to disappear entirely. Every interaction becomes a negotiation with fear, a careful dance around the unseen consequences of being known.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Others cope by overperforming. They serve tirelessly, lead faithfully, and present a perfection that is not theirs, hoping that if they shine bright enough, they will be protected. They learn to anticipate criticism, to anticipate suspicion, to anticipate rejection, and adjust themselves before anyone even speaks. This is not ambition; it is armor.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Some withdraw entirely. They stop attending certain meetings, they avoid certain people, they retreat into corners where no one can reach them. Isolation becomes safety. Solitude becomes strategy. They tell themselves it is temporary, that one day it will be different. They pray for change, for courage, for healing, but the weight of avoidance is heavy, and it presses on their spirit.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Other survival mechanisms are invisible. Some learn to carry the pain silently, to pray without sharing, to serve without recognition, to keep their truth hidden even from those who should love them the most. They learn to measure every word, every gesture, every emotion. They learn to edit themselves for the sake of survival. And in doing so, they begin to forget what it feels like to breathe freely in community.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Jesus did not ask His people to survive Him. He asked them to live in His presence. He asked them to bring their brokenness, their fear, their doubts, and their questions to Him without hiding. He never demanded performance to be loved. He never measured faith by perfection. He never required safety through silence.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>But in the church, many have learned otherwise. Many have developed coping strategies not because they wanted to, but because they had no other choice. They survived. They adapted. They preserved themselves where the system failed.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>This chapter is not a condemnation. It is recognition. It is an acknowledgment that survival is not sin, and that coping is not failure. It is a testament to the human spirit under pressure, and to the ways Jesus meets us even when the systems around us fail.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Healing begins when survival mechanisms are honored, when coping is understood, and when the person behind the strategy is finally seen. Bruised reeds learn to bend without breaking, to adjust without disappearing, to remain present without surrendering their voice. And in that place, restoration begins.</p>
-
-        <div class="footer-nav">
-            <a href="chapter5.html">← Previous</a>
-            <a href="chapter7.html">Next Chapter →</a>
-        </div>
-
-    </div>
-
 </div>
+
+</section>
+
+</main>
+
 
 <footer>
 
-    <p class="highlight">Bruised Reeds: When Holiness Becomes a Weapon</p>
-    <p>Written by Bradley Hobbs</p>
+<div class="footer-wrap">
 
-    <p>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="introduction.html">Introduction</a> |
-        <a href="chapter7.html">Chapter 7</a>
-    </p>
+<h2 class="footer-title">
 
-    <p>You are seen. You are known. You are loved by Jesus.</p>
+Bruised Reeds
 
-    <p>© 2026 Bradley Hobbs. All rights reserved.</p>
+</h2>
+
+<p class="footer-small">
+
+Written by Bradley Hobbs
+
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="introduction.html">
+
+Introduction
+
+</a>
+
+<a href="chapter6.html">
+
+Chapter 6
+
+</a>
+
+<a href="chapter7.html">
+
+Chapter 7
+
+</a>
+
+</div>
+
+<p class="footer-message">
+
+"You are seen. You are known. You are loved by Jesus."
+
+</p>
+
+<div class="divider"></div>
+
+<p class="footer-small">
+
+© 2026 Bradley Hobbs. All Rights Reserved.
+
+</p>
+
+</div>
 
 </footer>
 
 </body>
+
 </html>
