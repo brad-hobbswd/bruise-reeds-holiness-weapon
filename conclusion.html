@@ -1,239 +1,614 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Read the conclusion of Bruised Reeds by Bradley Hobbs, a message of healing, restoration, courage, and hope through Jesus Christ.">
+
+<meta
+name="author"
+content="Bradley Hobbs">
 
 <title>Bruised Reeds | Conclusion</title>
 
 <style>
 
-/* ===== RESET ===== */
-* {
-    box-sizing: border-box;
+/*==============================
+RESET
+==============================*/
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+html{
+
+scroll-behavior:smooth;
+
 }
 
-/* ===== BODY ===== */
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: linear-gradient(to bottom, #1a1410, #0f0b08);
-    color: #f5f2eb;
+body{
+
+font-family:
+Georgia,
+"Times New Roman",
+serif;
+
+background:
+linear-gradient(
+180deg,
+#1a1410 0%,
+#15100d 40%,
+#0f0b08 100%);
+
+color:#f5f2eb;
+
+line-height:1.9;
+
+overflow-x:hidden;
+
 }
 
-/* ===== NAV ===== */
-nav {
-    background: #0f0b08;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #2a211c;
+/*==============================
+NAVIGATION
+==============================*/
+
+nav{
+
+background:#0f0b08;
+
+border-bottom:1px solid #2a211c;
+
+padding:18px 25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:24px;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
 }
 
-nav a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
+nav a{
+
+color:#d4af37;
+
+text-decoration:none;
+
+font-size:15px;
+
+letter-spacing:.5px;
+
+transition:color .3s ease;
+
 }
 
-nav a:hover {
-    color: #e6c76b;
+nav a:hover{
+
+color:#f1d889;
+
 }
 
-/* ===== HERO BANNER ===== */
-.hero {
-    width: 100%;
-    height: 420px;
-    overflow: hidden;
-    position: relative;
+/*==============================
+HERO
+==============================*/
+
+.hero{
+
+width:100%;
+
+background:#0f0b08;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:35px 20px;
+
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 18%;
+.hero img{
+
+width:100%;
+
+max-width:1600px;
+
+height:auto;
+
+display:block;
+
+object-fit:contain;
+
 }
 
-/* ===== CONTAINER ===== */
-.container {
-    max-width: 850px;
-    margin: auto;
-    padding: 20px;
+/*==============================
+MAIN
+==============================*/
+
+main{
+
+padding:70px 25px;
+
 }
 
-/* ===== CONTENT ===== */
-.content {
-    background: #1f1813;
-    padding: 45px 35px;
-    border-radius: 12px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+/*==============================
+CONTENT
+==============================*/
+
+.content{
+
+max-width:950px;
+
+margin:auto;
+
 }
 
-/* ===== TITLE ===== */
-.content h3 {
-    text-align: center;
-    color: #d4af37;
-    margin-bottom: 35px;
-    letter-spacing: 1px;
+.content h1{
+
+text-align:center;
+
+font-size:48px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:20px;
+
 }
 
-/* ===== TEXT ===== */
-.content p {
-    line-height: 1.9;
-    margin-bottom: 20px;
+.subtitle{
+
+text-align:center;
+
+font-style:italic;
+
+color:#cdbfae;
+
+margin-bottom:60px;
+
+font-size:18px;
+
 }
 
-/* ===== DIVIDER ===== */
-.divider {
-    text-align: center;
-    margin: 35px 0;
-    color: #3a2f28;
+.article{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(34,26,20,.96),
+
+rgba(23,18,14,.98)
+
+);
+
+border:1px solid rgba(212,175,55,.15);
+
+border-radius:20px;
+
+padding:60px;
+
+box-shadow:
+
+0 25px 60px
+
+rgba(0,0,0,.35);
+
 }
 
-/* ===== FOOTER NAV ===== */
-.footer-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.article p{
+
+font-size:18px;
+
+line-height:2;
+
+margin-bottom:28px;
+
+color:#d7cec3;
+
 }
 
-.footer-nav a {
-    color: #d4af37;
-    text-decoration: none;
+.divider{
+
+width:90px;
+
+height:1px;
+
+background:#4a3a30;
+
+margin:45px auto;
+
 }
 
-.footer-nav a:hover {
-    color: #e6c76b;
+.chapter-nav{
+
+margin-top:60px;
+
+text-align:center;
+
 }
 
-/* ===== FOOTER ===== */
-footer {
-    margin-top: 70px;
-    background: #0f0b08;
-    border-top: 1px solid #2a211c;
-    padding: 30px 20px;
-    text-align: center;
+.chapter-nav a{
+
+display:inline-block;
+
+padding:14px 30px;
+
+border:1px solid #d4af37;
+
+color:#d4af37;
+
+text-decoration:none;
+
+transition:
+
+background .3s,
+
+color .3s,
+
+transform .3s;
+
 }
 
-footer p {
-    margin: 6px 0;
-    font-size: 13px;
-    color: #a89c8f;
+.chapter-nav a:hover{
+
+background:#d4af37;
+
+color:#0f0b08;
+
+transform:translateY(-2px);
+
 }
 
-footer .highlight {
-    color: #d4af37;
+/*==============================
+FOOTER
+==============================*/
+
+footer{
+
+margin-top:80px;
+
+background:#0b0907;
+
+border-top:1px solid #2a211c;
+
+padding:70px 30px;
+
+text-align:center;
+
 }
 
-footer a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 8px;
-    font-size: 13px;
+.footer-wrap{
+
+max-width:900px;
+
+margin:auto;
+
 }
 
-footer a:hover {
-    color: #e6c76b;
+.footer-title{
+
+font-size:32px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:25px;
+
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-    .hero {
-        height: 300px;
-    }
+.footer-links{
+
+margin:30px 0;
+
 }
 
-@media (max-width: 600px) {
-    .hero {
-        height: 220px;
-    }
+.footer-links a{
 
-    .content {
-        padding: 25px;
-    }
+color:#d4af37;
+
+text-decoration:none;
+
+margin:0 12px;
+
+}
+
+.footer-links a:hover{
+
+color:#f1d889;
+
+}
+
+.footer-message{
+
+margin:30px 0;
+
+font-style:italic;
+
+color:#d4af37;
+
+}
+
+.footer-small{
+
+font-size:13px;
+
+color:#9d9184;
+
+margin:8px 0;
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+.hero{
+
+padding:20px 10px;
+
+}
+
+.content h1{
+
+font-size:36px;
+
+}
+
+.article{
+
+padding:32px;
+
+}
+
+.article p{
+
+font-size:17px;
+
+}
+
+nav{
+
+gap:16px;
+
+}
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="introduction.html">Introduction</a>
-    <a href="chapter1.html">Chapter 1</a>
+<nav aria-label="Primary Navigation">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="introduction.html">Introduction</a>
+
+<a href="chapter1.html">Chapter 1</a>
+
 </nav>
 
-<!-- ===== BANNER ===== -->
-<div class="hero">
-    <img src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png" alt="Bruised Reeds Banner">
+<main>
+
+<!-- ==========================
+HERO
+========================== -->
+
+<section class="hero">
+
+<img
+src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png"
+alt="Bruised Reeds Banner"
+loading="eager"
+decoding="async">
+
+</section>
+
+<div style="
+width:90%;
+max-width:1200px;
+height:1px;
+background:#2a211c;
+margin:0 auto 70px;
+"></div>
+
+<!-- ==========================
+CONCLUSION
+========================== -->
+
+<section class="content">
+
+<h1>Conclusion</h1>
+
+<p class="subtitle">
+
+Rising to the High Calling
+
+</p>
+
+<div class="article">
+
+<p>
+
+The stories in this book are not simply about harm. They are testimonies of endurance, faith, and the relentless work of Jesus in the lives of those who have been bruised but never abandoned. They reveal the painful realities of silence, misunderstanding, rejection, and misplaced judgment, while also proclaiming the greater reality that God's grace is able to restore what people have wounded.
+
+</p>
+
+<p>
+
+Perhaps, as you have read these pages, you have recognized parts of your own journey. You may have remembered moments when your voice was ignored, your motives questioned, or your faith misunderstood. You may have carried burdens that no one else could see. If so, know this with certainty: you are not alone. Every bruised reed and every quiet heart matters to Jesus. He sees what others overlook, He knows what others cannot understand, and His love has never left you.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+This is not the end of your story. Healing is rarely completed in a single conversation or a single prayer. It is the steady work of walking with Jesus each day, allowing Him to restore trust where fear has taken root, to replace shame with mercy, and to strengthen the places that once seemed permanently broken.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+The Church has a sacred responsibility to reflect the heart of Christ, but each believer carries that responsibility as well. We are called to protect those who are vulnerable, to listen before judging, to restore instead of condemn, and to become people whose words consistently reflect both truth and grace.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+There is remarkable power in testimony. There is freedom in honesty. Every time we choose integrity over silence and compassion over fear, we become living witnesses of God's faithfulness. Our scars no longer become symbols of defeat. Instead, they become reminders of His sustaining grace and His ability to redeem even the deepest wounds.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+The high calling of Jesus Christ has never been about perfection or control. It has always been about becoming more like Him. It is demonstrated through humility, mercy, courage, forgiveness, and unwavering love. It is choosing light when darkness seems easier and extending hope when others expect rejection.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Bruised reeds bend beneath the weight of suffering, yet they are not forgotten by God. He gently restores what others would discard. Through His compassion, broken lives become testimonies of redemption, and wounded hearts become instruments of hope for others who are still searching for healing.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+As you leave these pages, may you continue walking with confidence, knowing that your story is still being written by the Author of life. Let your voice bring healing. Let your life reflect the compassion of Jesus. Stand for truth. Walk in grace. Protect the vulnerable. Love without reservation. Above all, remember that the One who called you is faithful, and He will never leave the work He has begun within you.
+
+</p>
+
+<div class="chapter-nav">
+
+<a href="chapter9.html">
+
+← Back to Chapter 9
+
+</a>
+
 </div>
 
-<div class="container">
-
-    <div class="content">
-
-        <h3>Conclusion:<br>Rising to the High Calling</h3>
-
-        <p>The stories in this book are not just about harm. They are about survival, endurance, and the relentless work of Jesus in the lives of those who were bruised. They are about the ways God’s people have been silenced, shamed, and misrepresented, and how courage and love can rise in the midst of it all.</p>
-
-        <p>You may have read these pages and recognized your own story. You may have felt the weight of closets, surveillance, labels, lies, and absence. You may have remembered the moments when holiness was turned into a weapon and wondered if anyone else could understand. You are not alone. Every bruised reed, every smoking wick, every quiet voice in the corners of the church carries the same truth: you are seen, you are known, you are loved by Jesus.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>This is not the end of your story. Healing is not finished in a single chapter, a single conversation, or a single prayer. It is a lifelong journey of learning to speak, to listen, to trust, and to walk in freedom. It is learning to honor your own voice while holding space for others. It is learning to discern the difference between human judgment and divine truth.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>The church has a role to play, but so do you. You are called to speak, to intervene, to protect, and to restore when you see harm. You are called to offer mercy, truth, and courage to those who cannot yet speak. You are called to rise to the high calling of love, the calling of Jesus, who did not shrink from the hurting, who did not abandon the wounded, and who always restored what was broken.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>There is power in testimony. There is freedom in being known. There is life in telling the truth in love. By naming the harm, by refusing to remain silent, by walking in integrity and courage, you become a witness not only to God’s faithfulness but to the sacred worth of every bruised reed around you.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>The high calling is not about control, not about perfection, not about the avoidance of mistakes. It is about reflecting Jesus in every interaction, protecting those who are vulnerable, and loving the way He loved. The high calling is about courage in the face of fear, truth in the face of lies, and light in the face of darkness.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Bruised reeds bend, they sway, they endure. But they do not break. They are not forgotten. They are not meaningless. They are chosen by God. They are restored by God. And through them, the church can finally learn what holiness is meant to look like: life-giving, compassionate, redemptive, and rooted in the love of Jesus.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Rise. Speak. Protect. Love. Heal. Walk forward knowing that the bruises you carry are not shameful. They are proof of survival. They are proof of faith. And they are proof that Jesus, the one true God, sees you, honors you, and is calling you to the fullness of your high calling.</p>
-
-        <div class="footer-nav">
-            <a href="chapter9.html">← Back to Chapter 9</a>
-        </div>
-
-    </div>
-
 </div>
+
+</section>
+
+</main>
+
 
 <footer>
 
-    <p class="highlight">Bruised Reeds: When Holiness Becomes a Weapon</p>
-    <p>Written by Bradley Hobbs</p>
+<div class="footer-wrap">
 
-    <p>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="introduction.html">Introduction</a>
-    </p>
+<h2 class="footer-title">
 
-    <p>You are seen. You are known. You are loved by Jesus.</p>
+Bruised Reeds
 
-    <p>© 2026 Bradley Hobbs. All rights reserved.</p>
+</h2>
+
+<p class="footer-small">
+
+Written by Bradley Hobbs
+
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="introduction.html">
+
+Introduction
+
+</a>
+
+<a href="chapter1.html">
+
+Chapter 1
+
+</a>
+
+</div>
+
+<p class="footer-message">
+
+"You are seen. You are known. You are loved by Jesus."
+
+</p>
+
+<div class="divider"></div>
+
+<p class="footer-small">
+
+© 2026 Bradley Hobbs. All Rights Reserved.
+
+</p>
+
+</div>
 
 </footer>
 
 </body>
+
 </html>
