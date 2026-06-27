@@ -1,255 +1,653 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bruised Reeds | Chapter 5</title>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Read Chapter Five of Bruised Reeds by Bradley Hobbs. Holiness Without Humanity explores compassion, church hurt, restoration, and the example of Jesus Christ.">
+
+<meta
+name="author"
+content="Bradley Hobbs">
+
+<title>Bruised Reeds | Chapter Five</title>
 
 <style>
 
-/* ===== RESET ===== */
-* {
-    box-sizing: border-box;
+/*==============================
+RESET
+==============================*/
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+html{
+
+scroll-behavior:smooth;
+
 }
 
-/* ===== BODY ===== */
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: linear-gradient(to bottom, #1a1410, #0f0b08);
-    color: #f5f2eb;
+body{
+
+font-family:
+Georgia,
+"Times New Roman",
+serif;
+
+background:
+linear-gradient(
+180deg,
+#1a1410 0%,
+#15100d 40%,
+#0f0b08 100%);
+
+color:#f5f2eb;
+
+line-height:1.9;
+
+overflow-x:hidden;
+
 }
 
-/* ===== NAV ===== */
-nav {
-    background: #0f0b08;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #2a211c;
+/*==============================
+NAVIGATION
+==============================*/
+
+nav{
+
+background:#0f0b08;
+
+border-bottom:1px solid #2a211c;
+
+padding:18px 25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:24px;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
 }
 
-nav a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
+nav a{
+
+color:#d4af37;
+
+text-decoration:none;
+
+font-size:15px;
+
+letter-spacing:.5px;
+
+transition:color .3s ease;
+
 }
 
-nav a:hover {
-    color: #e6c76b;
+nav a:hover{
+
+color:#f1d889;
+
 }
 
-/* ===== HERO BANNER ===== */
-.hero {
-    width: 100%;
-    height: 420px;
-    overflow: hidden;
-    position: relative;
+/*==============================
+HERO
+==============================*/
+
+.hero{
+
+width:100%;
+
+background:#0f0b08;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:35px 20px;
+
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 18%;
+.hero img{
+
+width:100%;
+
+max-width:1600px;
+
+height:auto;
+
+display:block;
+
+object-fit:contain;
+
 }
 
-/* ===== CONTAINER ===== */
-.container {
-    max-width: 850px;
-    margin: auto;
-    padding: 20px;
+/*==============================
+MAIN
+==============================*/
+
+main{
+
+padding:70px 25px;
+
 }
 
-/* ===== CONTENT ===== */
-.content {
-    background: #1f1813;
-    padding: 45px 35px;
-    border-radius: 12px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+/*==============================
+CHAPTER
+==============================*/
+
+.content{
+
+max-width:950px;
+
+margin:auto;
+
 }
 
-/* ===== TITLE ===== */
-.content h3 {
-    text-align: center;
-    color: #d4af37;
-    margin-bottom: 35px;
-    letter-spacing: 1px;
+.content h1{
+
+text-align:center;
+
+font-size:48px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:18px;
+
 }
 
-/* ===== TEXT ===== */
-.content p {
-    line-height: 1.9;
-    margin-bottom: 20px;
+.subtitle{
+
+text-align:center;
+
+font-size:18px;
+
+font-style:italic;
+
+color:#cdbfae;
+
+margin-bottom:60px;
+
 }
 
-/* ===== DIVIDER ===== */
-.divider {
-    text-align: center;
-    margin: 35px 0;
-    color: #3a2f28;
+.article{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(34,26,20,.96),
+
+rgba(23,18,14,.98)
+
+);
+
+border:1px solid rgba(212,175,55,.15);
+
+border-radius:20px;
+
+padding:60px;
+
+box-shadow:
+
+0 25px 60px
+
+rgba(0,0,0,.35);
+
 }
 
-/* ===== FOOTER NAV ===== */
-.footer-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+.article p{
+
+font-size:18px;
+
+line-height:2;
+
+margin-bottom:28px;
+
+color:#d7cec3;
+
 }
 
-.footer-nav a {
-    color: #d4af37;
-    text-decoration: none;
+.divider{
+
+width:90px;
+
+height:1px;
+
+background:#4a3a30;
+
+margin:45px auto;
+
 }
 
-.footer-nav a:hover {
-    color: #e6c76b;
+/*==============================
+CHAPTER NAVIGATION
+==============================*/
+
+.chapter-nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:20px;
+
+margin-top:60px;
+
+flex-wrap:wrap;
+
 }
 
-/* ===== FOOTER ===== */
-footer {
-    margin-top: 70px;
-    background: #0f0b08;
-    border-top: 1px solid #2a211c;
-    padding: 30px 20px;
-    text-align: center;
+.chapter-nav a{
+
+display:inline-block;
+
+padding:14px 28px;
+
+border:1px solid #d4af37;
+
+color:#d4af37;
+
+text-decoration:none;
+
+transition:
+
+background .3s,
+
+color .3s,
+
+transform .3s;
+
 }
 
-footer p {
-    margin: 6px 0;
-    font-size: 13px;
-    color: #a89c8f;
+.chapter-nav a:hover{
+
+background:#d4af37;
+
+color:#0f0b08;
+
+transform:translateY(-2px);
+
 }
 
-footer .highlight {
-    color: #d4af37;
+/*==============================
+FOOTER
+==============================*/
+
+footer{
+
+margin-top:80px;
+
+background:#0b0907;
+
+border-top:1px solid #2a211c;
+
+padding:70px 30px;
+
+text-align:center;
+
 }
 
-footer a {
-    color: #d4af37;
-    text-decoration: none;
-    margin: 0 8px;
-    font-size: 13px;
+.footer-wrap{
+
+max-width:900px;
+
+margin:auto;
+
 }
 
-footer a:hover {
-    color: #e6c76b;
+.footer-title{
+
+font-size:32px;
+
+font-weight:normal;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+margin-bottom:25px;
+
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-    .hero {
-        height: 300px;
-    }
+.footer-links{
+
+margin:30px 0;
+
 }
 
-@media (max-width: 600px) {
-    .hero {
-        height: 220px;
-    }
+.footer-links a{
 
-    .content {
-        padding: 25px;
-    }
+color:#d4af37;
 
-    .footer-nav {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
+text-decoration:none;
+
+margin:0 12px;
+
+}
+
+.footer-links a:hover{
+
+color:#f1d889;
+
+}
+
+.footer-message{
+
+margin:30px 0;
+
+font-style:italic;
+
+color:#d4af37;
+
+}
+
+.footer-small{
+
+font-size:13px;
+
+color:#9d9184;
+
+margin:8px 0;
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+.hero{
+
+padding:20px 10px;
+
+}
+
+.content h1{
+
+font-size:36px;
+
+}
+
+.article{
+
+padding:32px;
+
+}
+
+.article p{
+
+font-size:17px;
+
+}
+
+.chapter-nav{
+
+justify-content:center;
+
+}
+
+nav{
+
+gap:16px;
+
+}
+
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="introduction.html">Introduction</a>
-    <a href="chapter1.html">Chapter 1</a>
+<nav aria-label="Primary Navigation">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="introduction.html">Introduction</a>
+
+<a href="chapter1.html">Chapter 1</a>
+
 </nav>
 
-<!-- ===== BANNER ===== -->
-<div class="hero">
-    <img src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png" alt="Bruised Reeds Banner">
+<main>
+
+<!-- ==========================
+HERO
+========================== -->
+
+<section class="hero">
+
+<img
+src="BF6DC6EE-2C2E-4956-B6DE-27B82AC5CA6F.png"
+alt="Bruised Reeds Banner"
+loading="eager"
+decoding="async">
+
+</section>
+
+<div style="
+width:90%;
+max-width:1200px;
+height:1px;
+background:#2a211c;
+margin:0 auto 70px;
+"></div>
+
+<!-- ==========================
+CHAPTER FIVE
+========================== -->
+
+<section class="content">
+
+<h1>Chapter Five</h1>
+
+<p class="subtitle">
+
+Holiness Without Humanity
+
+</p>
+
+<div class="article">
+
+<p>
+
+Some of the deepest wounds experienced within the Church are not caused by the pursuit of holiness itself but by a distorted version of holiness that has become separated from compassion. It is not the holiness demonstrated by Jesus, who consistently moved toward the broken, restored the weary, and united truth with mercy. Instead, it is a holiness that demands performance, measures faithfulness through fear, and isolates those who do not fit expected patterns.
+
+</p>
+
+<p>
+
+This kind of holiness remains distant from suffering. It speaks confidently about righteousness while quietly overlooking the pain of those standing nearby. It emphasizes correction but neglects compassion. It measures obedience by outward appearance while giving little attention to the condition of the heart. Standards become more important than relationships, and rules begin replacing genuine shepherding.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Many believers know this experience well. They have received correction without encouragement, Scripture without relationship, and expectations without explanation. They have been told difficult decisions were made for their own good while opportunities quietly disappeared and meaningful conversations never occurred. Language intended to communicate righteousness instead became a means of creating silence and distance.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Jesus consistently revealed another way. He never separated holiness from humanity. Before He corrected, He listened. Before He challenged, He drew near. Before He spoke about change, He demonstrated compassion. His holiness never diminished His mercy, nor did His mercy compromise His holiness. Every encounter reflected patience, dignity, truth, and genuine love.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Whenever holiness becomes disconnected from humanity, it eventually produces fear instead of freedom. It creates barriers where relationships should flourish. It encourages people to hide rather than heal, to perform rather than grow, and to protect themselves rather than trust the community around them. The vulnerable often become the first to suffer because acceptance appears conditional upon remaining invisible.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+True holiness never demands secrecy. It welcomes honest conversation, asks thoughtful questions, and walks patiently beside those carrying heavy burdens. It recognizes people before problems, relationships before regulations, and restoration before reputation. Above all, it reflects the character of Jesus, whose holiness always invited people closer rather than driving them away.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+This chapter is written for those who have experienced correction without compassion, leadership without relationship, or expectations without understanding. It is for those who have quietly carried disappointment while continuing to love Jesus with sincere hearts. It is also an invitation for every believer to examine whether their own understanding of holiness reflects the example Christ Himself demonstrated.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Holiness without humanity is not the design of God. It becomes another expression of control rather than an invitation into grace. Jesus continually calls His people toward a better way where truth walks beside mercy, conviction is joined with compassion, and every person is treated with dignity because each one bears the image of God.
+
+</p>
+
+<div class="divider"></div>
+
+<p>
+
+Bruised reeds are not discarded because they have been wounded. They remain precious to the One who created them. Every believer, every church, and every community is called to protect that truth. Wherever holiness forgets compassion, it ceases to reflect the heart of Christ. Genuine holiness always restores, heals, and leads people toward the love of Jesus.
+
+</p>
+
+<div class="chapter-nav">
+
+<a href="chapter4.html">
+
+← Chapter Four
+
+</a>
+
+<a href="chapter6.html">
+
+Chapter Six →
+
+</a>
+
 </div>
 
-<div class="container">
-
-    <div class="content">
-
-        <h3>Chapter Five:<br>Holiness Without Humanity</h3>
-
-        <p>Some of the most painful moments in the church happen when holiness becomes a weapon. Not the holiness Jesus modeled, which bends toward the wounded, which restores the broken, which moves with love and conviction together. But a holiness that demands performance, that measures faith by fear, that isolates those who do not fit the expected mold.</p>
-
-        <p>This is the kind of holiness that does not kneel beside the suffering. It prays at a distance while judgment is carried quietly in the heart. It speaks loudly about sin and correction while failing to sit with those who are hurting. It measures people’s faithfulness by their obedience to standards, never by the condition of their soul, never by the evidence of Jesus in their lives.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Many have experienced this. They have felt the sting of correction without compassion, the weight of scripture without presence, the pressure to conform without explanation. They have been told, “This is for your good,” while being erased from conversation, ministry, and community. The language of righteousness is used to silence, and the promise of God’s care is used to justify absence.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>The truth is, Jesus never treated people this way. He never separated holiness from humanity. He never demanded perfection before touching. He never offered correction without first offering compassion. Every encounter with Him carried presence, patience, and perspective. He corrected with love, rebuked with clarity, and always moved toward people instead of away from them.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>When holiness is disconnected from humanity, it becomes dangerous. It isolates, it shames, it wounds. It creates walls where there should be doors. It turns concern into control and love into fear. Those who are most vulnerable learn quickly to hide, to perform, to silence themselves. Their spiritual lives are distorted not because of sin, but because the very system that should protect them has made safety conditional on invisibility.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>True holiness does not demand hiding. True holiness does not require silence. True holiness enters the room, listens deeply, asks questions, and walks alongside the bruised and weary. It sees humans before it sees the mistake. It honors the person before it enforces the rule. It reflects Jesus.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>This chapter is for those who have felt the absence of humanity in the name of holiness. It is for those who have been corrected, prayed over, and labeled without ever being fully known. It is for those who have learned to shrink, to disappear, to guard their voice, and still love Jesus faithfully.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Holiness without humanity is not God’s plan. It is a shadow of control. But the light of Jesus calls us back to a different way; a way where love and truth, mercy and justice, presence and correction walk together. Where the high calling of God is reached not by performance, but by faithfulness to His image in one another.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>Bruised reeds are not broken reeds. They are not extinguished wicks. They are living souls, made in the image of Jesus, worthy of care, attention, and presence. And any church, any community, any person that forgets this has turned holiness into a weapon.</p>
-
-        <div class="divider">––––––––––––––––––</div>
-
-        <p>This chapter exists so you can name it. So, you can see it for what it is. So, you can stop excusing what was never holy. And so, you can move toward the kind of faith that heals, restores, and protects, reflecting Jesus in every step.</p>
-
-        <div class="footer-nav">
-            <a href="chapter4.html">← Previous</a>
-            <a href="chapter6.html">Next Chapter →</a>
-        </div>
-
-    </div>
-
 </div>
+
+</section>
+
+</main>
+
 
 <footer>
 
-    <p class="highlight">Bruised Reeds: When Holiness Becomes a Weapon</p>
-    <p>Written by Bradley Hobbs</p>
+<div class="footer-wrap">
 
-    <p>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="introduction.html">Introduction</a> |
-        <a href="chapter6.html">Chapter 6</a>
-    </p>
+<h2 class="footer-title">
 
-    <p>You are seen. You are known. You are loved by Jesus.</p>
+Bruised Reeds
 
-    <p>© 2026 Bradley Hobbs. All rights reserved.</p>
+</h2>
+
+<p class="footer-small">
+
+Written by Bradley Hobbs
+
+</p>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="introduction.html">
+
+Introduction
+
+</a>
+
+<a href="chapter5.html">
+
+Chapter 5
+
+</a>
+
+<a href="chapter6.html">
+
+Chapter 6
+
+</a>
+
+</div>
+
+<p class="footer-message">
+
+"You are seen. You are known. You are loved by Jesus."
+
+</p>
+
+<div class="divider"></div>
+
+<p class="footer-small">
+
+© 2026 Bradley Hobbs. All Rights Reserved.
+
+</p>
+
+</div>
 
 </footer>
 
 </body>
+
 </html>
